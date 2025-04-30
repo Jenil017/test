@@ -1,0 +1,2476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Industries Served by Supreme Thread - Textile, Automotive, Medical, and more.">
+    <meta name="keywords" content="industries, sectors, textile, automotive, medical, Supreme Thread">
+    <meta name="author" content="Supreme Thread">
+    <title>Industries - Supreme Thread</title>
+    <link rel="shortcut icon" href="/SupremeThread/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/SupremeThread/assets/images/favicon.png" type="image/x-icon">
+    <!-- Fallback favicon.ico for browser compatibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/common-improvements.css">
+    <link rel="stylesheet" href="assets/css/header-improvements.css">
+    <link rel="stylesheet" href="assets/css/footer-improvements.css">
+    <link rel="stylesheet" href="assets/css/fixed-width.css">
+    <link rel="stylesheet" href="assets/css/fix-footer-dots.css">
+    <link rel="stylesheet" href="assets/css/logo-update.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      .page-banner {
+        background-size: cover;
+        background-position: center;
+        padding: 60px 0 40px 0;
+        position: relative;
+        color: #fff;
+      }
+      .page-banner .container { position: relative; z-index: 2; }
+      .page-banner:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(30,58,138,0.22) 0%, rgba(249,246,242,0.92) 100%), rgba(30,58,138,0.22);
+        z-index: 1;
+      }
+      .page-title { font-size: 2.5rem; font-weight: bold; text-shadow: 0 4px 24px rgba(30,58,138,0.22); }
+      .section { padding: 48px 0; }
+      .section-title { font-size: 2rem; font-weight: bold; color: var(--primary) !important; }
+      .cta-section {
+        background: linear-gradient(90deg, #e3f2fd 0%, #fce4ec 100%);
+        border-radius: 18px;
+      }
+      .cta-title { font-weight: bold; }
+    </style>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Add special footer fixing style for industries page -->
+    <style>
+    /* Special footer fix for industries page */
+    .footer {
+        position: relative !important;
+        clear: both !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        z-index: 100 !important;
+        transform: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        display: block !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Container styling to prevent shifts */
+    .footer .footer-container {
+        transform: none !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    /* Fix body and html to prevent overflow issues */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+    </style>
+    
+    <!-- Regal Mauve Theme for Industries Page -->
+    <style>
+    /* Global Regal Mauve Color Theme */
+    :root {
+      --primary-mauve: #a44871;
+      --primary-mauve-dark: #8a3960;
+      --primary-mauve-light: #c76a93;
+      --primary-mauve-ultra-light: rgba(164, 72, 113, 0.1);
+      --primary-mauve-gradient: linear-gradient(135deg, #a44871 0%, #8a3960 100%);
+      --primary-mauve-shadow: 0 10px 25px rgba(164, 72, 113, 0.15);
+    }
+    
+    /* Header with Regal Mauve Theme */
+    .header {
+      background: var(--primary-mauve-gradient) !important;
+      box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .header.scrolled {
+      background: linear-gradient(135deg, rgba(164, 72, 113, 0.95) 0%, rgba(138, 57, 96, 0.95) 100%) !important;
+      backdrop-filter: blur(8px) !important;
+      box-shadow: 0 5px 25px rgba(164, 72, 113, 0.4) !important;
+    }
+    
+    /* Navigation Links */
+    .nav-link {
+      padding: 0.5rem 0.8rem !important;
+      transition: all 0.3s ease !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.3px !important;
+      position: relative !important;
+    }
+    
+    .nav-link::after {
+      content: '' !important;
+      position: absolute !important;
+      bottom: 4px !important;
+      left: 50% !important;
+      width: 0 !important;
+      height: 2px !important;
+      background: #ffffff !important;
+      transition: all 0.3s ease !important;
+      transform: translateX(-50%) !important;
+      opacity: 0 !important;
+    }
+    
+    .nav-link:hover {
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+    }
+    
+    .nav-link:hover::after {
+      width: 60% !important;
+      opacity: 1 !important;
+    }
+    
+    .nav-link.active {
+      color: #ffffff !important;
+      font-weight: 600 !important;
+    }
+    
+    .nav-link.active::after {
+      width: 60% !important;
+      opacity: 1 !important;
+      background: #D4AF37 !important; /* Gold underline for active link */
+    }
+    
+    /* Hero Section Mauve Theme */
+    .industries-hero-modern {
+      background: linear-gradient(120deg, #f8f9fa 0%, #f1f1f6 100%) !important;
+    }
+    
+    .industries-hero-overlay {
+      background: linear-gradient(120deg, rgba(255,255,255,0.8) 0%, rgba(245,241,246,0.7) 100%) !important;
+    }
+    
+    .hero-badge {
+      background: rgba(164, 72, 113, 0.15) !important;
+      border: 1px solid rgba(164, 72, 113, 0.1) !important;
+      color: #a44871 !important;
+      box-shadow: 0 5px 15px rgba(164, 72, 113, 0.2) !important;
+    }
+    
+    .industries-hero-title {
+      background: linear-gradient(to right, #8a3960, #a44871, #c76a93) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      text-shadow: none !important;
+      position: relative !important;
+    }
+    
+    .industries-hero-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 3px;
+      background: linear-gradient(to right, #8a3960, #a44871, #c76a93);
+      border-radius: 3px;
+    }
+    
+    .industries-hero-desc .highlight {
+      color: #a44871 !important;
+      background-color: rgba(164, 72, 113, 0.15) !important;
+    }
+    
+    /* Change floating elements to mauve theme */
+    .premium-shape {
+      background-color: rgba(164, 72, 113, 0.3) !important;
+      border: 2.5px solid rgba(164, 72, 113, 0.35) !important;
+      box-shadow: 0 8px 35px rgba(164, 72, 113, 0.25) !important;
+    }
+    
+    .premium-circle {
+      border: 3px solid rgba(164, 72, 113, 0.35) !important;
+      box-shadow: 0 10px 25px rgba(164, 72, 113, 0.25) !important;
+    }
+    
+    .premium-line {
+      background: linear-gradient(90deg, rgba(164, 72, 113, 0.4), rgba(164, 72, 113, 0.1)) !important;
+    }
+    
+    .premium-blob {
+      background: radial-gradient(circle, rgba(164, 72, 113, 0.08) 0%, rgba(255, 255, 255, 0) 70%) !important;
+    }
+    
+    /* Background patterns with mauve */
+    .industries-hero-modern::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23a44871' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
+    }
+    
+    .industries-hero-modern::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a44871' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E") !important;
+    }
+    
+    .hero-premium-elements::after {
+      background-image: radial-gradient(circle at 20% 30%, rgba(164, 72, 113, 0.25) 0%, rgba(164, 72, 113, 0) 8%),
+                        radial-gradient(circle at 50% 80%, rgba(164, 72, 113, 0.22) 0%, rgba(164, 72, 113, 0) 6%),
+                        radial-gradient(circle at 80% 15%, rgba(164, 72, 113, 0.28) 0%, rgba(164, 72, 113, 0) 10%),
+                        radial-gradient(circle at 15% 60%, rgba(164, 72, 113, 0.2) 0%, rgba(164, 72, 113, 0) 7%),
+                        radial-gradient(circle at 70% 60%, rgba(164, 72, 113, 0.23) 0%, rgba(164, 72, 113, 0) 9%) !important;
+    }
+    
+    /* Industries section */
+    .industries-modern-section {
+      background: linear-gradient(120deg, #f8f9fa 70%, #f5edf2 100%) !important;
+    }
+    
+    .industries-modern-title, .industries-modern-section h2, .industries-modern-section h3 {
+      color: #a44871 !important;
+    }
+    
+    .industries-modern-title::after {
+      background-color: #a44871 !important;
+    }
+    
+    .industry-modern-card {
+      box-shadow: 0 4px 20px rgba(164, 72, 113, 0.08), 0 1px 5px rgba(164, 72, 113, 0.05) !important;
+    }
+    
+    .industry-modern-card:hover {
+      box-shadow: 0 10px 30px rgba(164, 72, 113, 0.15), 0 1px 8px rgba(164, 72, 113, 0.08) !important;
+      transform: translateY(-5px) !important;
+      border: 1px solid rgba(164, 72, 113, 0.1) !important;
+    }
+    
+    .industry-modern-label {
+      color: #a44871 !important;
+    }
+    
+    .industry-modern-label:hover {
+      color: #c76a93 !important;
+    }
+    
+    /* CTA Section */
+    .premium-cta-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #f5edf2 100%) !important;
+    }
+    
+    .premium-cta-section::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23a44871' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
+    }
+    
+    .premium-cta-card {
+      background: linear-gradient(135deg, #a44871 0%, #8a3960 100%) !important;
+    }
+    
+    .premium-cta-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f9e79f' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+    }
+    
+    .premium-cta-glow {
+      background: radial-gradient(circle, rgba(249, 231, 159, 0.15) 0%, rgba(255, 255, 255, 0) 70%) !important;
+    }
+    
+    .premium-cta-btn {
+      background: #e5e7e9 !important;
+      color: #a44871 !important;
+    }
+    
+    .premium-cta-btn:hover {
+      background: #d0d3d4 !important;
+    }
+    
+    /* Footer */
+    .footer {
+      background: var(--primary-mauve-gradient) !important;
+    }
+    
+    .social-link {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .social-link:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .footer-links-title::after {
+      background: #f9e79f !important;
+    }
+    
+    .footer-links a::before {
+      background: #f9e79f !important;
+    }
+    
+    /* Mobile menu */
+    .mobile-menu {
+      background: linear-gradient(135deg, rgba(164, 72, 113, 0.97) 0%, rgba(138, 57, 96, 0.97) 100%) !important;
+    }
+    
+    .mobile-nav-link.active {
+      border-left: 3px solid #f9e79f !important;
+    }
+    
+    /* Add shimmer animation for titles */
+    @keyframes shimmer {
+      0% { transform: translateX(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) rotate(45deg); }
+    }
+    
+    .section-title {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .section-title::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0) 40%, 
+        rgba(164, 72, 113, 0.1) 50%, 
+        rgba(255, 255, 255, 0) 60%
+      );
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+      z-index: 0;
+    }
+    
+    /* Make sure all icon colors match the theme */
+    .fas, .fab, .far, .header i, .footer i {
+      color: inherit !important;
+    }
+    
+    /* Update any remaining blue colors in the UI */
+    .industries-hero-modern a, .industries-modern-section a {
+      color: #a44871 !important;
+    }
+    
+    .industries-underline {
+      border-bottom: 3px solid #a44871 !important;
+    }
+    
+    /* Fix button hover states */
+    .btn:hover, button:hover {
+      background-color: #a44871 !important;
+      border-color: #a44871 !important;
+    }
+    
+    /* Adjust icon colors in industry cards */
+    .industry-modern-icon-bg i {
+      color: #a44871 !important;
+    }
+    
+    /* Enhance industry cards further */
+    .industry-modern-icon-bg img {
+      filter: none !important; /* Remove filter since we updated the icon URLs directly */
+    }
+    
+    /* Mobile menu overlay */
+    .mobile-menu-overlay {
+      background: rgba(164, 72, 113, 0.4) !important;
+      backdrop-filter: blur(4px) !important;
+    }
+    
+    /* Fix header nav positioning */
+    .header-container {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0 1.5rem !important;
+      height: 80px !important;
+      max-width: 1200px !important;
+      margin: 0 auto !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    .desktop-nav {
+      display: flex !important;
+      align-items: center !important;
+      margin-left: auto !important;
+    }
+    
+    .nav-menu {
+      display: flex !important;
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      align-items: center !important;
+    }
+    
+    /* Adjust spacing between nav items */
+    .nav-item {
+      margin: 0 8px !important;
+      position: relative !important;
+    }
+    
+    /* Remove all the other nav item specific selectors as they're creating conflicts */
+    .nav-item:nth-child(3) .nav-link,
+    .nav-item:nth-child(2) .nav-link {
+      /* Reset any specific styles */
+      color: inherit !important;
+      font-weight: inherit !important;
+    }
+    
+    .nav-item:nth-child(3) .nav-link::after,
+    .nav-item:nth-child(2) .nav-link::after {
+      /* Reset any specific styles */
+      opacity: inherit !important;
+      width: inherit !important;
+    }
+    
+    /* Define standard link styling */
+    .nav-link {
+      display: block !important;
+      padding: 10px 18px !important;
+      color: rgba(255, 255, 255, 0.85) !important;
+      text-decoration: none !important;
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      transition: all 0.3s ease !important;
+      border-radius: 30px !important;
+      position: relative !important;
+    }
+    
+    .nav-link:hover {
+      color: #ffffff !important;
+    }
+    
+    .nav-link::after {
+      content: '' !important;
+      position: absolute !important;
+      bottom: 5px !important;
+      left: 50% !important;
+      width: 0 !important;
+      height: 2px !important;
+      background: #ffffff !important;
+      transition: all 0.3s ease !important;
+      transform: translateX(-50%) !important;
+      opacity: 0 !important;
+    }
+    
+    .nav-link:hover::after {
+      width: 60% !important;
+      opacity: 1 !important;
+    }
+    
+    /* Then define active state */
+    .nav-link.active {
+      color: #ffffff !important;
+      font-weight: 600 !important;
+    }
+    
+    .nav-link.active::after {
+      width: 60% !important;
+      opacity: 1 !important;
+    }
+    
+    /* Make sure the logo is positioned correctly */
+    .logo {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+      padding: 0.5rem 0 !important;
+    }
+    
+    /* Ensure mobile menu toggle is correctly positioned */
+    .menu-toggle {
+      margin-left: 1rem !important;
+    }
+    
+    /* Fix active page indicator - this is the Industries page */
+    .nav-item:nth-child(3) .nav-link {
+      color: #ffffff !important;
+      font-weight: 600 !important;
+    }
+    
+    .nav-item:nth-child(3) .nav-link::after {
+      opacity: 1 !important;
+      width: 60% !important;
+    }
+    
+    /* Fix for About being incorrectly marked as active */
+    .nav-item:nth-child(2) .nav-link {
+      color: rgba(255, 255, 255, 0.85) !important;
+      font-weight: 500 !important;
+    }
+    
+    .nav-item:nth-child(2) .nav-link::after {
+      opacity: 0 !important;
+      width: 0 !important;
+    }
+    
+    .mobile-nav-item:nth-child(2) .mobile-nav-link {
+      background: rgba(255, 255, 255, 0.08) !important;
+      border-left: none !important;
+      font-weight: 500 !important;
+    }
+    
+    @media (max-width: 768px) {
+      .header-container {
+        padding: 0 1rem !important;
+      }
+    }
+    </style>
+</head>
+<body class="bg-background font-sans text-text-primary">
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container header-container">
+          <a href="index.html" class="logo">
+              <img src="img3.jpg" alt="Supreme Thread Logo">
+              <div class="logo-text">Supreme Thread</div>
+          </a>
+          
+          <!-- Desktop Navigation Menu (visible only on desktop) -->
+          <nav class="desktop-nav">
+              <ul class="nav-menu">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="industries.html" class="nav-link active">Industries</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              </ul>
+          </nav>
+          
+          <!-- Mobile Menu Button (visible only on mobile) -->
+          <button class="menu-toggle" aria-label="Toggle mobile menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
+  </header>
+
+  <!-- Mobile Side Menu -->
+  <div class="mobile-menu">
+      <div class="mobile-menu-header">
+          <a href="index.html" class="mobile-logo">
+              <img src="img3.jpg" alt="Supreme Thread Logo">
+              <span>Supreme Thread</span>
+          </a>
+          <button class="mobile-menu-close">
+              <span>&times;</span>
+          </button>
+      </div>
+      <ul class="mobile-nav-menu">
+          <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li class="mobile-nav-item"><a href="industries.html" class="mobile-nav-link active">Industries</a></li>
+          <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+          <div class="mobile-social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay"></div>
+
+  
+
+    <!-- Main Content Starts -->
+    <!-- Modern Hero Section for Industries (Cascade Custom) -->
+    <section class="industries-hero-modern">
+      <!-- Premium background design elements -->
+      <div class="hero-premium-elements">
+        <!-- Geometric shapes -->
+        <div class="premium-shape shape1"></div>
+        <div class="premium-shape shape2"></div>
+        <div class="premium-shape shape3"></div>
+        <div class="premium-shape shape4"></div>
+        <!-- Decorative circles -->
+        <div class="premium-circle circle1"></div>
+        <div class="premium-circle circle2"></div>
+        <div class="premium-circle circle3"></div>
+        <!-- Abstract lines -->
+        <div class="premium-line line1"></div>
+        <div class="premium-line line2"></div>
+        <div class="premium-line line3"></div>
+        <!-- Gradient blob -->
+        <div class="premium-blob"></div>
+      </div>
+      
+      <div class="industries-hero-bg">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1500&q=80" alt="Industries" class="industries-hero-img" />
+        <div class="industries-hero-overlay"></div>
+      </div>
+      <div class="container industries-hero-content">
+        <div class="hero-content-wrapper">
+          <div class="hero-badge">
+            <i class="fas fa-industry"></i>
+            <span>Industries We Serve</span>
+          </div>
+          <h1 class="industries-hero-title" id="industries-hero-animated-title">Empowering Every Sector with Supreme Thread Solutions</h1>
+          <p class="industries-hero-desc">
+            Supreme Thread is a trusted partner across <span class="highlight">textile</span>, <span class="highlight">automotive</span>, <span class="highlight">medical</span>, <span class="highlight">aerospace</span>, and many other industries. Our advanced threads deliver <strong>strength</strong>, <strong>precision</strong>, and <strong>reliability</strong> for every application—manufacturing, safety-critical components, or innovative product design. Experience tailored solutions, expertise, and quality that power progress in every sector we serve.
+          </p>
+        </div>
+      </div>
+    </section>
+    <style>
+      :root {
+        --hero-gradient-start: rgba(255, 255, 255, 0.92);
+        --hero-gradient-end: rgba(245, 245, 245, 0.9);
+        --accent-color-light: rgba(26, 60, 64, 0.12);
+        --accent-color: rgba(26, 60, 64, 0.18);
+      }
+      
+      /* Hero Section Styles */
+      .industries-hero-modern {
+        position: relative;
+        min-height: 90vh; /* Reduced from 100vh */
+        height: auto; /* Changed from fixed height to auto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(120deg, #ffffff 10%, #f5f7f8 100%);
+        overflow: hidden;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0; /* Ensure no extra margin */
+        box-sizing: border-box; /* Add box-sizing */
+      }
+      
+      /* Background elements */
+      .industries-hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      
+      .industries-hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.20; /* Slightly increased for better visibility */
+        filter: none; /* Remove blur effect */
+        z-index: 1;
+      }
+      
+      .industries-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(255,255,255,0.8) 0%, rgba(245,247,248,0.7) 100%); /* Restore white overlay */
+        z-index: 2;
+      }
+      
+      /* Content styling */
+      .industries-hero-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 90vh; /* Reduced from 100vh */
+        height: auto; /* Changed from 100% to auto */
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 70px; /* Add padding at bottom */
+        box-sizing: border-box; /* Add box-sizing */
+      }
+      
+      .hero-content-wrapper {
+        position: relative;
+        z-index: 10;
+        max-width: 85%;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(26, 60, 64, 0.15);
+        border: 1px solid rgba(26, 60, 64, 0.08);
+      }
+      
+      .hero-badge {
+        background: rgba(26, 60, 64, 0.15); /* Darker badge background */
+        border-radius: 16px;
+        padding: 0.5rem 1.2rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        backdrop-filter: blur(2px);
+        color: #1A3C40;
+        border: 1px solid rgba(26, 60, 64, 0.1); /* Added border */
+      }
+      
+      .hero-badge i {
+        font-size: 1.2rem;
+      }
+      
+      .industries-hero-title {
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin-bottom: 1.3rem;
+        color: #1A3C40;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+      }
+      
+      .industries-hero-desc {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #4B5D67;
+        max-width: 800px;
+        margin-bottom: 1.8rem;
+        text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+      }
+      
+      .industries-hero-desc .highlight {
+        color: #1A3C40;
+        font-weight: 700;
+        background-color: rgba(26, 60, 64, 0.15); /* Darker highlight */
+        padding: 0 5px;
+        border-radius: 3px;
+      }
+      
+      /* Premium design elements */
+      .hero-premium-elements {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+        opacity: 1;
+        pointer-events: none; /* Ensure floaties don't interfere with page flow */
+      }
+      
+      /* Geometric shapes */
+      .premium-shape {
+        position: absolute;
+        z-index: 3;
+        opacity: 0.95; /* Increased opacity significantly */
+        background-color: rgba(26, 60, 64, 0.3); /* Much darker color for better visibility */
+        border: 2.5px solid rgba(26, 60, 64, 0.35); /* Thicker border */
+        box-shadow: 0 8px 35px rgba(26, 60, 64, 0.25); /* Stronger shadow */
+      }
+      
+      .shape1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        top: 15%;
+        left: 8%;
+        transform: rotate(15deg);
+        animation: float 15s infinite alternate ease-in-out;
+      }
+      
+      .shape2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        bottom: 20%;
+        right: 12%;
+        transform: rotate(-10deg);
+        animation: float 12s infinite alternate-reverse ease-in-out;
+        animation-delay: 1s;
+      }
+      
+      .shape3 {
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        top: 30%;
+        right: 18%;
+        transform: rotate(25deg);
+        animation: float 10s infinite alternate ease-in-out;
+        animation-delay: 2s;
+      }
+      
+      .shape4 {
+        width: 65px;
+        height: 65px;
+        border-radius: 16px;
+        bottom: 35%;
+        left: 15%;
+        transform: rotate(-20deg);
+        animation: float 14s infinite alternate-reverse ease-in-out;
+        animation-delay: 0.5s;
+      }
+      
+      /* Decorative circles */
+      .premium-circle {
+        position: absolute;
+        z-index: 3;
+        border-radius: 50%;
+        border: 3px solid rgba(26, 60, 64, 0.35); /* Thicker border */
+        opacity: 0.9; /* Increased opacity */
+        box-shadow: 0 10px 25px rgba(26, 60, 64, 0.25); /* Stronger shadow */
+      }
+      
+      .circle1 {
+        width: 90px;
+        height: 90px;
+        top: 25%;
+        right: 25%;
+        animation: float 18s infinite alternate ease-in-out;
+      }
+      
+      .circle2 {
+        width: 50px;
+        height: 50px;
+        bottom: 28%;
+        right: 35%;
+        animation: float 14s infinite alternate-reverse ease-in-out;
+        animation-delay: 1.5s;
+      }
+      
+      .circle3 {
+        width: 70px;
+        height: 70px;
+        top: 45%;
+        left: 12%;
+        animation: float 16s infinite alternate ease-in-out;
+        animation-delay: 2.5s;
+      }
+      
+      /* Abstract lines */
+      .premium-line {
+        position: absolute;
+        z-index: 3;
+        background: linear-gradient(90deg, rgba(26, 60, 64, 0.4), rgba(26, 60, 64, 0.1)); /* Stronger gradient */
+        height: 4px; /* Thicker line */
+        width: 150px;
+        border-radius: 50px;
+        opacity: 0.95; /* Increased opacity */
+        box-shadow: 0 5px 15px rgba(26, 60, 64, 0.25); /* Stronger shadow */
+      }
+      
+      .line1 {
+        top: 20%;
+        left: 30%;
+        width: 180px;
+        transform: rotate(45deg);
+        animation: float 20s infinite alternate ease-in-out;
+      }
+      
+      .line2 {
+        bottom: 25%;
+        right: 20%;
+        width: 140px;
+        transform: rotate(-30deg);
+        animation: float 18s infinite alternate-reverse ease-in-out;
+        animation-delay: 1s;
+      }
+      
+      .line3 {
+        top: 60%;
+        left: 25%;
+        width: 120px;
+        transform: rotate(15deg);
+        animation: float 15s infinite alternate ease-in-out;
+        animation-delay: 2s;
+      }
+      
+      /* Gradient blob */
+      .premium-blob {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        bottom: -250px;
+        left: -250px;
+        background: radial-gradient(circle, rgba(26, 60, 64, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+        border-radius: 50%;
+        filter: blur(50px);
+        opacity: 0.8;
+        z-index: 1;
+        animation: blob-animation 20s infinite alternate ease-in-out;
+      }
+      
+      /* Background threading pattern */
+      .industries-hero-modern::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3c40' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        background-size: 180px 180px;
+        opacity: 0.6;
+        z-index: 1;
+        animation: subtle-move 30s infinite alternate linear;
+      }
+      
+      /* Add thread-like diagonal lines pattern */
+      .industries-hero-modern::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231a3c40' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 60px 60px;
+        opacity: 0.7;
+        z-index: 1;
+        animation: subtle-move 25s infinite alternate-reverse linear;
+      }
+      
+      /* Add glittering dots */
+      .glitter-dot {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgba(26, 60, 64, 0.2);
+        box-shadow: 0 0 10px rgba(26, 60, 64, 0.3);
+        z-index: 1;
+        animation: glitter 10s infinite ease-in-out;
+      }
+      
+      /* Add animations */
+      @keyframes float {
+        0% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+        50% { transform: translateY(-15px) rotate(calc(var(--rotation, 0deg) + 5deg)); }
+        100% { transform: translateY(5px) rotate(calc(var(--rotation, 0deg) - 5deg)); }
+      }
+      
+      @keyframes pulse-animation {
+        0% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 0.9; }
+        100% { transform: scale(0.98); opacity: 0.7; }
+      }
+      
+      @keyframes slide-in {
+        0% { transform: translateX(-30px) rotate(-30deg); opacity: 0.2; }
+        50% { transform: translateX(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateX(30px) rotate(30deg); opacity: 0.2; }
+      }
+      
+      @keyframes blob-animation {
+        0% { transform: scale(1) translate(0, 0); }
+        50% { transform: scale(1.1) translate(30px, -20px); }
+        100% { transform: scale(0.9) translate(-20px, 40px); }
+      }
+      
+      @keyframes subtle-move {
+        0% { background-position: 0 0; }
+        100% { background-position: 100px 100px; }
+      }
+      
+      @keyframes glitter {
+        0%, 100% { transform: scale(0.3); opacity: 0; }
+        50% { transform: scale(1); opacity: 0.8; }
+      }
+      
+      /* Add glittering dots */
+      .hero-premium-elements::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-image: radial-gradient(circle at 20% 30%, rgba(26, 60, 64, 0.25) 0%, rgba(26, 60, 64, 0) 8%),
+                          radial-gradient(circle at 50% 80%, rgba(26, 60, 64, 0.22) 0%, rgba(26, 60, 64, 0) 6%),
+                          radial-gradient(circle at 80% 15%, rgba(26, 60, 64, 0.28) 0%, rgba(26, 60, 64, 0) 10%),
+                          radial-gradient(circle at 15% 60%, rgba(26, 60, 64, 0.2) 0%, rgba(26, 60, 64, 0) 7%),
+                          radial-gradient(circle at 70% 60%, rgba(26, 60, 64, 0.23) 0%, rgba(26, 60, 64, 0) 9%);
+        background-size: 100% 100%;
+        opacity: 0.9;
+        pointer-events: none;
+      }
+      
+      /* Apply containment to all animated elements */
+      .premium-shape, .premium-circle, .premium-line, .premium-blob {
+        contain: layout paint size;
+        will-change: transform;
+        transform: translateZ(0);
+      }
+      
+      /* Media queries for responsive design elements */
+      @media (max-width: 1200px) {
+        .shape1 { width: 200px; height: 200px; }
+        .shape2 { width: 150px; height: 150px; }
+        .circle1 { width: 250px; height: 250px; }
+        .industries-hero-modern::before { background-size: 150px 150px; }
+        .hero-content-wrapper { max-width: 700px; padding: 2.5rem; }
+        .industries-hero-title { font-size: 2.8rem; }
+      }
+      
+      @media (max-width: 992px) {
+        .industries-hero-modern { 
+          min-height: 100vh;
+          height: 100vh;
+          padding-top: 70px; /* Account for header on medium screens */
+        }
+        .hero-content-wrapper { max-width: 90%; padding: 2rem; }
+        .industries-hero-title { font-size: 2.4rem; margin-bottom: 1.2rem; }
+        .industries-hero-desc { font-size: 1.1rem; }
+        .hero-badge { padding: 0.4rem 1rem; font-size: 1rem; margin-bottom: 1.2rem; }
+      }
+      
+      @media (max-width: 768px) {
+        .industries-hero-modern {
+          min-height: 100vh;
+          height: 100vh;
+        }
+        
+        .industries-hero-content {
+          padding-top: 80px; /* Account for header on mobile */
+        }
+        
+        .shape1, .shape4 { display: block; }
+        .premium-line { width: 150px; }
+        .industries-hero-modern::after { opacity: 0.7; }
+        .industries-hero-modern::before { opacity: 0.7; background-size: 120px 120px; }
+        .hero-content-wrapper { padding: 1.8rem; }
+        .industries-hero-title { font-size: 2rem; margin-bottom: 1rem; }
+        .industries-hero-desc { font-size: 1rem; }
+      }
+      
+      @media (max-width: 576px) {
+        .industries-hero-modern { 
+          min-height: 100vh;
+          height: 100vh;
+        }
+        .hero-content-wrapper { padding: 1.5rem; }
+        .industries-hero-title { font-size: 1.8rem; }
+        .industries-hero-desc { font-size: 0.95rem; }
+        .hero-badge { font-size: 0.9rem; padding: 0.3rem 0.8rem; margin-bottom: 1rem; gap: 0.5rem; }
+      }
+      
+      @media (max-width: 480px) {
+        .shape2, .shape3, .circle2, .circle3 { display: block; }
+        .premium-line { display: block; }
+        .premium-blob { opacity: 0.6; }
+        .hero-content-wrapper { padding: 1.2rem; }
+        .industries-hero-title { font-size: 1.6rem; }
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize countdown animation for stats
+      const statsElements = document.querySelectorAll('.stat-number');
+      
+      let hasAnimated = false;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasAnimated) {
+            hasAnimated = true;
+            statsElements.forEach(el => {
+              const count = el.getAttribute('data-count');
+              animateCount(el, parseInt(count));
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      // Observe first stat element
+      if (statsElements.length > 0) {
+        observer.observe(statsElements[0].parentElement);
+      }
+      
+      function animateCount(el, target) {
+        let current = 0;
+        const increment = Math.ceil(target / 30); // Divide animation into 30 steps
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current;
+        }, 30);
+      }
+      
+      // Preloader
+      const preloader = document.querySelector('.preloader');
+      if (preloader) {
+        window.addEventListener('load', function() {
+          preloader.classList.add('hide');
+        });
+      }
+      
+      // Initialize AOS
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ once: false, mirror: true, offset: 120, easing: 'ease-out-cubic' });
+      }
+    });
+    </script>
+    <style>
+      .typed-ghost {
+        visibility: hidden;
+        display: block;
+        height: 0;
+        white-space: normal;
+        font-size: inherit;
+        font-weight: inherit;
+        font-family: inherit;
+        line-height: inherit;
+      }
+      #typed-industries {
+        display: block;
+      }
+    </style>
+    <!-- Modern Industries Section -->
+    <section id="industries-list" class="industries-modern-section">
+      <div class="industries-modern-container">
+        <h2 class="industries-modern-title" data-aos="fade-up"style="text-decoration: underline;">Industries We Serve</h2>
+        <p class="industries-modern-intro" data-aos="fade-up" data-aos-delay="100">
+          Our innovative threads empower diverse industries with precision and reliability. Discover how Supreme Thread elevates performance across sectors.
+        </p>
+        <div class="industries-modern-grid">
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="120">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/t-shirt.png" alt="Apparel & Fashion"></div>
+            <div class="industry-modern-label">Apparel & Fashion</div>
+            <div class="industry-modern-desc">Premium threads for garments, sportswear, and haute couture.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="140">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/automotive.png" alt="Automotive"></div>
+            <div class="industry-modern-label">Automotive</div>
+            <div class="industry-modern-desc">Durable solutions for car seats, airbags, interiors, and trims.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="160">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/medical-doctor.png" alt="Medical & Healthcare"></div>
+            <div class="industry-modern-label">Medical & Healthcare</div>
+            <div class="industry-modern-desc">Safe, sterile threads for medical textiles and equipment.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="180">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/sneakers.png" alt="Footwear"></div>
+            <div class="industry-modern-label">Footwear</div>
+            <div class="industry-modern-desc">High-strength threads for shoes, sneakers, and athletic gear.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="200">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/sofa.png" alt="Home & Upholstery"></div>
+            <div class="industry-modern-label">Home & Upholstery</div>
+            <div class="industry-modern-desc">Elegant threads for furniture, bedding, and home textiles.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="220">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/parachute.png" alt="Technical & Industrial"></div>
+            <div class="industry-modern-label">Technical & Industrial</div>
+            <div class="industry-modern-desc">Specialty threads for safety gear, filtration, and more.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="240">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/airplane-take-off.png" alt="Aerospace"></div>
+            <div class="industry-modern-label">Aerospace</div>
+            <div class="industry-modern-desc">Engineered threads for aircraft interiors and safety textiles.</div>
+          </div>
+          <div class="industry-modern-card" data-aos="zoom-in-up" data-aos-delay="260">
+            <div class="industry-modern-icon-bg"><img src="https://img.icons8.com/ios-filled/150/a44871/football2.png" alt="Sports & Leisure"></div>
+            <div class="industry-modern-label">Sports & Leisure</div>
+            <div class="industry-modern-desc">Performance threads for sports equipment and accessories.</div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <style>
+    .industries-modern-section {
+      background: linear-gradient(120deg, #f8fafc 70%, #e0e7ff 100%);
+      padding: 4rem 0 3rem 0;
+      margin-top: -1px; /* Connect smoothly with hero section */
+    }
+    .industries-modern-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .industries-modern-title, .industries-modern-section h2, .industries-modern-section h3 {
+      color: var(--primary) !important;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .industries-modern-intro {
+      text-align: center;
+      font-size: 1.12rem;
+      color: #64748b;
+      margin-bottom: 2.7rem;
+      font-weight: 500;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .industries-modern-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+    .industry-modern-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(30,58,138,0.08), 0 1px 5px rgba(236,72,153,0.05);
+      transition: box-shadow 0.28s, transform 0.28s, background 0.25s;
+      padding: 1.8rem 1rem 1.2rem 1rem;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 220px;
+      overflow: hidden;
+    }
+    .industry-modern-icon-bg {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .industry-modern-icon-bg img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+    .industry-modern-card:hover .industry-modern-icon-bg img {
+      transform: scale(1.1);
+    }
+    .industry-modern-label {
+      color: #1A3C40 !important;
+      font-weight: 700;
+      font-size: 1.13rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.25rem;
+      transition: color 0.2s;
+    }
+    .industry-modern-label:hover {
+      color: #1D5C63 !important;
+    }
+    .industry-modern-desc {
+      font-size: 0.95rem;
+      color: #64748b;
+      line-height: 1.4;
+    }
+    @media (max-width: 1100px) {
+      .industries-modern-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+      }
+    }
+    @media (max-width: 900px) {
+      .industries-modern-container {
+        max-width: 98vw;
+        padding: 0 1rem;
+      }
+      .industries-modern-title {
+        font-size: 1.8rem;
+      }
+      .industries-modern-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      .industry-modern-card {
+        min-height: 200px;
+        padding: 1.2rem 0.8rem 1rem 0.8rem;
+      }
+      .industry-modern-icon-bg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.8rem;
+      }
+      .industry-modern-icon-bg img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media (max-width: 600px) {
+      .industries-modern-section {
+        padding: 2.5rem 0 2rem 0;
+      }
+      
+      .industries-modern-container {
+        padding: 0 0.8rem;
+      }
+      
+      .industries-modern-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .industries-modern-intro {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .industries-modern-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+      }
+      
+      .industry-modern-card {
+        min-height: 170px;
+        padding: 1rem 0.6rem 0.8rem 0.6rem;
+      }
+      
+      .industry-modern-icon-bg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.6rem;
+      }
+      
+      .industry-modern-icon-bg img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .industry-modern-label {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+      }
+      
+      .industry-modern-desc {
+        font-size: 0.85rem;
+      }
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+    <script>
+    // Animate split cards on scroll
+    if (window.gsap) {
+      gsap.utils.toArray('.industry-split-card').forEach(card => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 85%',
+            toggleActions: 'play none none none',
+          },
+          y: 40,
+          opacity: 0,
+          duration: 0.7,
+          ease: 'power2.out',
+          stagger: 0.2
+        });
+      });
+    }
+    </script>
+     <!-- Call to Action Section -->
+    <section class="premium-cta-section">
+      <div class="premium-cta-container">
+        <div class="premium-cta-card">
+          <div class="premium-cta-pattern"></div>
+          <div class="premium-cta-glow"></div>
+          <div class="premium-cta-content">
+            <div class="premium-cta-icon">
+              <img src="img3.jpg" alt="Supreme Thread Logo">
+            </div>
+            <div class="premium-cta-text">
+              <h3>Ready to elevate your manufacturing with Supreme Thread?</h3>
+              <p>Our industry experts can help you find the perfect thread solutions for your specific needs</p>
+            </div>
+            <div class="premium-cta-action">
+              <a href="contact.html" class="premium-cta-btn">
+                <span>Connect With Us</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+    .premium-cta-section {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #f5f5f5 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .premium-cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3c40' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+      opacity: 0.3;
+      z-index: 0;
+    }
+    
+    .premium-cta-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .premium-cta-card {
+      background: linear-gradient(135deg, #1A3C40 0%, #234e53 100%);
+      border-radius: 20px;
+      box-shadow: 0 15px 50px rgba(26, 60, 64, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+    
+    .premium-cta-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f9e79f' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.8;
+      z-index: 0;
+    }
+    
+    .premium-cta-glow {
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(249, 231, 159, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    
+    .premium-cta-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 60px rgba(26, 60, 64, 0.2);
+    }
+    
+    .premium-cta-content {
+      display: flex;
+      align-items: center;
+      padding: 3.5rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .premium-cta-icon {
+      flex: 0 0 auto;
+      margin-right: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .premium-cta-icon::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0) 40%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        rgba(255, 255, 255, 0) 60%
+      );
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) rotate(45deg); }
+    }
+    
+    .premium-cta-icon img {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+    }
+    
+    .premium-cta-text {
+      flex: 1 1 400px;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .premium-cta-text h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff !important;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    
+    .premium-cta-text p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      max-width: 90%;
+    }
+    
+    .premium-cta-action {
+      flex: 0 0 auto;
+      margin-left: 3rem;
+    }
+    
+    .premium-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; /* Add this to center content */
+      text-align: center; /* Add this for text alignment */
+      gap: 0.8rem;
+      background: #e5e7e9;
+      color: #1A3C40;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      width: auto; /* Ensure proper width */
+      min-width: 200px; /* Add minimum width */
+    }
+    
+    .premium-cta-btn i {
+      transition: transform 0.3s ease;
+    }
+    
+    .premium-cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+      z-index: -1;
+    }
+    
+    .premium-cta-btn:hover {
+      background: #d0d3d4; /* Darker greyish on hover */
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+    
+    .premium-cta-btn:hover i {
+      transform: translateX(4px);
+    }
+    
+    .premium-cta-btn:hover::before {
+      transform: translateX(100%);
+    }
+    
+    @media (max-width: 1100px) {
+      .premium-cta-content {
+        padding: 3rem;
+      }
+      
+      .premium-cta-icon {
+        margin-right: 2.5rem;
+        padding: 1.2rem;
+      }
+      
+      .premium-cta-text h3 {
+        font-size: 2rem;
+      }
+      
+      .premium-cta-action {
+        margin-left: 2.5rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .premium-cta-section {
+        padding: 4rem 0;
+      }
+      
+      .premium-cta-content {
+        padding: 2.5rem;
+      }
+      
+      .premium-cta-icon {
+        padding: 1rem;
+        margin-right: 2rem;
+      }
+      
+      .premium-cta-icon img {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .premium-cta-text h3 {
+        font-size: 1.8rem;
+      }
+      
+      .premium-cta-text p {
+        font-size: 1.05rem;
+      }
+      
+      .premium-cta-action {
+        margin-left: 2rem;
+      }
+      
+      .premium-cta-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .premium-cta-section {
+        padding: 3.5rem 0;
+      }
+      
+      .premium-cta-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 2rem;
+        gap: 1.5rem;
+      }
+      
+      .premium-cta-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .premium-cta-text {
+        margin-bottom: 1.5rem;
+      }
+      
+      .premium-cta-text p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .premium-cta-action {
+        margin-left: 0;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .premium-cta-section {
+        padding: 3rem 0;
+      }
+      
+      .premium-cta-container {
+        padding: 0 1rem;
+      }
+      
+      .premium-cta-content {
+        padding: 2rem 1.5rem;
+      }
+      
+      .premium-cta-icon {
+        padding: 0.8rem;
+      }
+      
+      .premium-cta-icon img {
+        width: 60px;
+        height: 60px;
+      }
+      
+      .premium-cta-text h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+      }
+      
+      .premium-cta-text p {
+        font-size: 1rem;
+      }
+      
+      .premium-cta-btn {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .premium-cta-section {
+        padding: 2.5rem 0;
+      }
+      
+      .premium-cta-content {
+        padding: 1.8rem 1.2rem;
+      }
+      
+      .premium-cta-text h3 {
+        font-size: 1.4rem;
+      }
+      
+      .premium-cta-text p {
+        font-size: 0.95rem;
+      }
+    }
+    </style>
+    <!-- Fix CTA layout for all devices under 900px -->
+    <style>
+    @media (max-width: 900px) {
+      .premium-cta-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 2.5rem 2rem !important;
+      }
+      
+      .premium-cta-icon {
+        margin-right: 0 !important;
+        margin-bottom: 1.5rem !important;
+      }
+      
+      .premium-cta-text {
+        text-align: center !important;
+        margin-bottom: 1.5rem !important;
+        flex: 1 1 100% !important;
+      }
+      
+      .premium-cta-text p {
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      
+      .premium-cta-action {
+        margin-left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      
+      .premium-cta-btn {
+        margin: 0 auto !important;
+      }
+        }
+        </style>
+
+       <!-- Footer -->
+       <footer class="footer" style="clear: both; display: block; position: relative; width: 100%; margin-top: 0;">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">
+                        <img src="img3.jpg" alt="Supreme Thread Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">Supreme Thread</span>
+                    </div>
+                    <p class="footer-about">We are a leading manufacturer of premium quality threads for various industries. Our state-of-the-art facilities in Surat, Gujarat produce threads that meet international quality standards.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="industries.html">Industries</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Our Products</h3>
+                        <ul class="footer-links">
+                            <li><a href="#productsHeading">Premium Cotton Threads</a></li>
+                            <li><a href="#productsHeading">High-Strength Polyester</a></li>
+                            <li><a href="#productsHeading">Industrial Nylon Threads</a></li>
+                            <li><a href="#productsHeading">Specialized Blended Threads</a></li>
+                            <li><a href="#productsHeading">Precision Embroidery Threads</a></li>
+                            <li><a href="#productsHeading">Heavy-Duty Industrial Threads</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Get In Touch</h3>
+                        <div class="footer-contact">
+                            <p class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> 123 Industrial Avenue, GIDC, Surat, Gujarat, India - 395001</p>
+                            <p class="footer-contact-item"><i class="fas fa-phone"></i> +91 9876543210 / +91 9876098760</p>
+                            <p class="footer-contact-item"><i class="fas fa-envelope"></i> info@supremethread.com</p>
+                            <p class="footer-contact-item"><i class="fas fa-clock"></i> Monday-Saturday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Clear fix div to ensure footer is positioned correctly -->
+    <div style="clear: both; width: 100%; height: 1px; display: block; margin-bottom: 0"></div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+    <style>
+      .industries-underline {
+        border-bottom: 3px solid var(--primary-color, #1A3C40);
+        padding-bottom: 2px;
+        display: inline-block;
+      }
+    </style>
+    <!-- Add new media query for tablet (760-900px) - CTA Button Fix -->
+    <style>
+    @media (min-width: 760px) and (max-width: 900px) {
+      .modern-cta-action {
+        margin-left: 0 !important;
+        margin-top: 1.5rem !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      
+      .modern-cta-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      
+      .modern-cta-text {
+        text-align: center !important;
+        margin-bottom: 1rem !important;
+      }
+      
+      .modern-cta-btn {
+        margin: 0 auto !important;
+        padding: 0.8rem 2.5rem !important;
+      }
+    }
+    </style>
+
+    <style>
+    /* Enhanced animation for floating elements to make them more noticeable */
+    @keyframes float {
+        0% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+        50% { transform: translateY(-15px) rotate(calc(var(--rotation, 0deg) + 5deg)); }
+        100% { transform: translateY(5px) rotate(calc(var(--rotation, 0deg) - 5deg)); }
+    }
+
+    /* Mobile specific improvements - keep particles visible and bold */
+    @media (max-width: 768px) {
+        .industries-hero-modern {
+            min-height: 90vh;
+        }
+        
+        .industries-hero-img {
+            opacity: 0.25; /* Higher opacity on mobile */
+        }
+        
+        /* Make decorative elements even more visible on mobile */
+        .premium-shape {
+            opacity: 0.95;
+            background-color: rgba(26, 60, 64, 0.35); /* Darker on mobile */
+            border: 3px solid rgba(26, 60, 64, 0.4);
+            animation-duration: 10s; /* Faster animation on mobile */
+        }
+        
+        .premium-circle {
+            opacity: 0.95;
+            border: 3.5px solid rgba(26, 60, 64, 0.4);
+            animation-duration: 8s; /* Faster animation on mobile */
+        }
+        
+        .premium-line {
+            height: 5px;
+            opacity: 0.95;
+            background: linear-gradient(90deg, rgba(26, 60, 64, 0.45), rgba(26, 60, 64, 0.15));
+            animation-duration: 12s; /* Faster animation on mobile */
+        }
+        
+        /* Don't hide shapes on mobile */
+        .shape1, .shape4 { 
+            display: block; 
+        }
+        
+        /* Position shapes and elements to be more visible on mobile */
+        .shape1 { top: 10%; left: 5%; width: 70px; height: 70px; }
+        .shape2 { bottom: 15%; right: 5%; }
+        .shape3 { top: 20%; right: 10%; }
+        .shape4 { bottom: 25%; left: 7%; }
+        
+        .circle1 { top: 15%; right: 18%; }
+        .circle2 { bottom: 20%; right: 25%; }
+        .circle3 { top: 35%; left: 8%; }
+        
+        .line1 { top: 25%; left: 20%; }
+        .line2 { bottom: 30%; right: 15%; }
+        .line3 { top: 50%; left: 15%; }
+        
+        .industries-hero-modern::after { opacity: 0.7; }
+        .industries-hero-modern::before { opacity: 0.7; background-size: 120px 120px; }
+        
+        /* Add pulsing animation to make elements more noticeable */
+        @keyframes pulse-mobile {
+            0% { transform: scale(1) translateY(0); }
+            50% { transform: scale(1.1) translateY(-10px); }
+            100% { transform: scale(1) translateY(0); }
+        }
+        
+        /* Apply to one element to grab attention */
+        .shape1 {
+            animation: pulse-mobile 5s infinite alternate ease-in-out;
+        }
+    }
+
+    /* Don't hide elements on small screens */
+    @media (max-width: 480px) {
+        .shape2, .shape3, .circle2, .circle3 { 
+        display: block;
+        }
+        .premium-line { 
+            display: block; 
+        }
+        
+        /* Make animations even more noticeable on smallest screens */
+        .premium-shape, .premium-circle, .premium-line {
+            animation-duration: 6s;
+        }
+        
+        /* Position more prominently on small screens */
+        .shape1 { top: 8%; left: 4%; }
+        .shape2 { bottom: 12%; right: 4%; }
+        .shape3 { top: 18%; right: 8%; }
+        .shape4 { bottom: 20%; left: 5%; }
+      }
+    </style>
+    
+    <!-- Footer contact items fix for all devices -->
+    <style>
+    /* Fix for footer contact items to keep icons and text on same line */
+    .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .footer-contact-item i {
+        margin-right: 10px;
+        flex-shrink: 0;
+        margin-top: 3px; /* Align icon with first line of text */
+        /* Removed dark color, reverting to original color */
+        width: 16px; /* Fixed width for icons */
+        text-align: center; /* Center the icon in its fixed width */
+    }
+    
+    /* Specifically target mobile devices */
+    @media (max-width: 768px) {
+        .footer-contact-item {
+            display: flex !important; /* Force flex display */
+            flex-direction: row !important; /* Force row direction */
+            align-items: flex-start !important;
+            text-align: left !important;
+        }
+        
+        .footer-contact-item i {
+            margin-right: 10px !important;
+            margin-bottom: 0 !important;
+        }
+    }
+    
+    /* Extra small devices */
+    @media (max-width: 480px) {
+        .footer-contact {
+            width: 100%;
+        }
+        
+        .footer-contact-item {
+            font-size: 0.9rem;
+        }
+    }
+    
+    /* Quick Links items in single line */
+    .footer-links-column:first-child .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .footer-links-column:first-child .footer-links li {
+        margin-right: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-links-column:first-child .footer-links li a {
+        padding: 3px 8px;
+        white-space: nowrap;
+    }
+    
+    /* For mobile devices */
+    @media (max-width: 768px) {
+        .footer-links-column:first-child .footer-links {
+            justify-content: center;
+        }
+        
+        .footer-links-column:first-child .footer-links li {
+            font-size: 0.85rem;
+        }
+    }
+    
+    /* Quick Links items in single line */
+    .footer-links-column:first-child .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .footer-links-column:first-child .footer-links li {
+        margin-right: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-links-column:first-child .footer-links li a {
+        padding: 3px 8px;
+        white-space: nowrap;
+    }
+    
+    /* For mobile devices */
+    @media (max-width: 768px) {
+        .footer-links-column:first-child .footer-links {
+            justify-content: center;
+            gap: 1px; /* Reduced gap between items */
+        }
+        
+        .footer-links-column:first-child .footer-links li {
+            font-size: 0.75rem; /* Much smaller font */
+            margin-right: 1px; /* Almost no margin */
+        }
+        
+        .footer-links-column:first-child .footer-links li a {
+            padding: 2px 4px; /* Minimal padding */
+            letter-spacing: -0.3px; /* Negative letter spacing to compress text */
+        }
+    }
+    
+    /* Extra small devices (phones) */
+    @media (max-width: 480px) {
+        .footer-links-column:first-child .footer-links {
+            gap: 0; /* No gap */
+            justify-content: space-between; /* Space evenly */
+            width: 100%; /* Full width */
+        }
+        
+        .footer-links-column:first-child .footer-links li {
+            font-size: 0.7rem; /* Even smaller font */
+            margin: 0; /* No margin */
+            flex: 0 0 auto; /* Don't grow or shrink */
+        }
+        
+        .footer-links-column:first-child .footer-links li a {
+            padding: 1px 2px; /* Minimal padding */
+            letter-spacing: -0.5px; /* More negative letter spacing */
+        }
+    }
+    
+    /* Better footer bottom gap fix */
+    .footer {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        position: relative !important;
+        bottom: 0 !important;
+    }
+    
+    /* Hide clear fix div */
+    body > div:last-of-type {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Fix hero section to fill screen properly */
+    .industries-hero-modern {
+        margin-top: 80px !important; /* Account for header height */
+        min-height: calc(100vh - 80px) !important; /* Full viewport height minus header */
+        height: auto !important;
+        padding-bottom: 0 !important;
+    }
+    
+    @media (max-width: 768px) {
+        .industries-hero-modern {
+            margin-top: 70px !important; /* Account for smaller header on mobile */
+            min-height: calc(100vh - 70px) !important;
+        }
+    }
+    
+    /* Premium Header Enhancements */
+    .header {
+        background: linear-gradient(135deg, #a44871 0%, #8a3960 100%) !important;
+        box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        height: 80px !important;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    }
+    
+    .header.scrolled {
+        background: linear-gradient(135deg, rgba(164, 72, 113, 0.95) 0%, rgba(138, 57, 96, 0.95) 100%) !important;
+        backdrop-filter: blur(8px) !important;
+        box-shadow: 0 5px 25px rgba(164, 72, 113, 0.4) !important;
+        height: 70px !important;
+    }
+    
+    .logo-text {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    }
+    
+    .logo img {
+        border: 2px solid #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .logo:hover img {
+        transform: scale(1.05) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+        border-color: #D4AF37 !important;
+    }
+    
+    .nav-link {
+        color: rgba(255, 255, 255, 0.85) !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.3px !important;
+        padding: 8px 16px !important;
+        transition: all 0.3s ease !important;
+        position: relative !important;
+    }
+    
+    .nav-link::after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: 4px !important;
+        left: 50% !important;
+        width: 0 !important;
+        height: 2px !important;
+        background: #ffffff !important;
+        transition: all 0.3s ease !important;
+        transform: translateX(-50%) !important;
+        opacity: 0 !important;
+    }
+    
+    .nav-link:hover {
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+    }
+    
+    .nav-link:hover::after {
+        width: 60% !important;
+        opacity: 1 !important;
+    }
+    
+    .nav-link.active {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+    
+    .nav-link.active::after {
+        width: 60% !important;
+        opacity: 1 !important;
+        background: #D4AF37 !important; /* Gold underline for active link */
+    }
+    
+    .menu-toggle {
+        background: rgba(255, 255, 255, 0.15) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.25) !important;
+        transform: translateY(-2px) !important;
+    }
+    
+    /* Add subtle animation to header */
+    @keyframes headerGlow {
+        0% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
+        50% { box-shadow: 0 4px 25px rgba(164, 72, 113, 0.4); }
+        100% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
+    }
+    
+    .header {
+        animation: headerGlow 5s infinite alternate ease-in-out;
+    }
+    
+    /* Fix company name (logo text) to be white and single line */
+    .logo-text {
+        color: #ffffff !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        font-size: 1.4rem !important;
+        font-weight: 700 !important;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+    }
+    
+    @media (max-width: 768px) {
+        .logo-text {
+            font-size: 1.2rem !important;
+            max-width: 150px !important;
+            white-space: nowrap !important;
+        }
+        
+        .logo img {
+            width: 38px !important;
+            height: 38px !important;
+            margin-right: 8px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logo-text {
+            font-size: 1.1rem !important;
+        }
+        
+        .logo img {
+            width: 34px !important;
+            height: 34px !important;
+            margin-right: 6px !important;
+        }
+    }
+    </style>
+    <style>
+    /* Premium Menu Toggle Button */
+    .menu-toggle {
+        background: rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+        width: 46px !important;
+        height: 46px !important;
+        border-radius: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        position: relative !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin-right: 5px !important;
+    }
+    
+    .menu-toggle::before {
+        content: '' !important;
+        position: absolute !important;
+        top: -50% !important;
+        left: -50% !important;
+        width: 200% !important;
+        height: 200% !important;
+        background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%) !important;
+        opacity: 0 !important;
+        transition: opacity 0.6s ease !important;
+        pointer-events: none !important;
+    }
+    
+    .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.18) !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .menu-toggle:hover::before {
+        opacity: 1 !important;
+    }
+    
+    .menu-toggle:active {
+        transform: translateY(1px) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .menu-toggle span {
+        display: block !important;
+        width: 22px !important;
+        height: 2px !important;
+        margin: 3px 0 !important;
+        background: #ffffff !important;
+        border-radius: 10px !important;
+        transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+        position: relative !important;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .menu-toggle:hover span {
+        width: 20px !important;
+    }
+    
+    .menu-toggle:hover span:nth-child(1) {
+        transform: translateY(1px) !important;
+    }
+    
+    .menu-toggle:hover span:nth-child(3) {
+        transform: translateY(-1px) !important;
+    }
+    
+    .menu-toggle.active {
+        background: rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 5px) !important;
+        width: 22px !important;
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0 !important;
+        transform: translateX(-10px) !important;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -5px) !important;
+        width: 22px !important;
+    }
+    
+    /* Glowing effect on active */
+    .menu-toggle.active::after {
+        content: '' !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 70%) !important;
+        border-radius: 12px !important;
+        z-index: -1 !important;
+        animation: pulseGold 2s infinite !important;
+    }
+    
+    @keyframes pulseGold {
+        0% { opacity: 0.5; }
+        50% { opacity: 0.8; }
+        100% { opacity: 0.5; }
+    }
+    
+    /* Mobile menu styling improvements */
+    .mobile-menu {
+        background: linear-gradient(135deg, rgba(164, 72, 113, 0.97) 0%, rgba(118, 47, 83, 0.97) 100%) !important;
+        backdrop-filter: blur(10px) !important;
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.25) !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .mobile-menu-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        padding: 20px !important;
+    }
+    
+    .mobile-menu-close {
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+        border-radius: 12px !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.6rem !important;
+        transition: all 0.3s ease !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+    
+    .mobile-menu-close:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+        transform: rotate(90deg) !important;
+    }
+    
+    .mobile-nav-link {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.3px !important;
+        border-radius: 10px !important;
+        transition: all 0.3s ease !important;
+        margin-bottom: 8px !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .mobile-nav-link:hover, .mobile-nav-link.active {
+        background: rgba(255, 255, 255, 0.15) !important;
+        transform: translateX(5px) !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    }
+    
+    .mobile-nav-link.active {
+        border-left: 3px solid #D4AF37 !important;
+        font-weight: 600 !important;
+    }
+    
+    .mobile-social-links a {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        color: #ffffff !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 10px !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .mobile-social-links a:hover {
+        background: rgba(255, 255, 255, 0.15) !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    /* Add subtle animation to header */
+    @keyframes headerGlow {
+        0% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
+        50% { box-shadow: 0 4px 25px rgba(164, 72, 113, 0.4); }
+        100% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
+    }
+    
+    .header {
+        animation: headerGlow 5s infinite alternate ease-in-out;
+    }
+    </style>
+</body>
+</html>

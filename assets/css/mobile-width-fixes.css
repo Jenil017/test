@@ -1,0 +1,163 @@
+/* Mobile-only width adjustments for product and client boxes */
+
+/* Only apply these styles on mobile devices */
+@media (max-width: 767px) {
+  /* Product cards - increase width but prevent overflow */
+  .product-card,
+  .product-card-modern,
+  .product-card-new,
+  .swiper-slide {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  
+  /* Product container - adjust to accommodate wider cards */
+  .product-grid-new,
+  .product-grid,
+  .swiper-wrapper,
+  .product-slider,
+  .product-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Client/testimonial boxes - increase width */
+  .client-box,
+  .client-card,
+  .testimonial-card,
+  .testimonial-slide,
+  .client-logo-container,
+  .testimonial-card-new {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  
+  /* Client/testimonial container adjustments */
+  .client-grid,
+  .client-container,
+  .testimonial-grid,
+  .testimonial-slider,
+  .client-logo-grid,
+  .testimonials-grid-new {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Feature cards/blocks - increase width */
+  .feature-block,
+  .feature-card,
+  .why-card-mfg,
+  .why-work-card {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  
+  /* Fix container to ensure centering and prevent overflow */
+  .container,
+  .section .container,
+  .product-section-new .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Ensure scrolling containers don't overflow */
+  .product-features-new,
+  .product-specs-modern,
+  .scrollable-container {
+    max-width: 90vw !important;
+    width: 90vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix for display grid containers */
+  .why-work-grid,
+  .facts-grid-new,
+  .product-grid-new,
+  .why-grid-mfg {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+  
+  /* Make sure section itself doesn't overflow */
+  .section,
+  .product-section-new,
+  .testimonial-section,
+  .why-work-section,
+  .facts-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Body and html overflow prevention */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Extra small devices (phones under 480px) */
+@media (max-width: 479px) {
+  /* Make boxes slightly wider but still prevent overflow */
+  .product-card,
+  .product-card-modern,
+  .product-card-new,
+  .client-box,
+  .client-card,
+  .testimonial-card,
+  .testimonial-card-new,
+  .feature-block,
+  .feature-card,
+  .why-card-mfg,
+  .why-work-card,
+  .process-step {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Remove any remaining side padding but keep some minimal padding */
+  .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+} 

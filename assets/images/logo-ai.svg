@@ -1,0 +1,11 @@
+<!-- AI-Generated Minimal Thread Logo SVG for Supreme Thread -->
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="12" fill="#1A3C40"/>
+  <g stroke="#F9A825" stroke-width="2.2" stroke-linecap="round">
+    <path d="M14 16C20 32 28 16 34 32"/>
+    <path d="M16 24C20 36 28 12 32 24"/>
+    <path d="M20 18C24 30 26 18 28 30"/>
+  </g>
+  <circle cx="24" cy="24" r="8" stroke="#fff" stroke-width="2" fill="none"/>
+  <circle cx="24" cy="24" r="2.5" fill="#F9A825"/>
+</svg>

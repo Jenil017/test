@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component classes for repetitive patterns */
+@layer components {
+  .btn {
+    @apply px-8 py-3 rounded font-heading font-bold text-white bg-primary shadow transition duration-300 hover:bg-accent hover:text-white focus:outline-none focus:ring-2 focus:ring-secondary;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-primary hover:bg-primary hover:text-secondary;
+  }
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-secondary hover:text-primary;
+  }
+  .card {
+    @apply bg-background-alt rounded shadow p-8 mb-8 transition-shadow duration-300 hover:shadow-card;
+  }
+  .section-title {
+    @apply text-3xl font-heading font-bold text-primary mb-6 text-center relative pb-4;
+  }
+  .section-title::after {
+    content: "";
+    @apply block mx-auto mt-2 w-20 h-1 bg-primary;
+  }
+  .section-subtitle {
+    @apply text-lg text-text-secondary mb-8 text-center;
+  }
+}
+
+/* Hide all mobile navigation elements across the site */
+.menu-toggle, 
+.new-menu-toggle,
+.nav-menu,
+.nav-menu-container,
+.nav-overlay {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Additional styles to prevent any hover effects */
+.menu-toggle *, 
+.new-menu-toggle *,
+.nav-menu *,
+.nav-menu-container *,
+.nav-overlay * {
+  pointer-events: none !important;
+}
+
+/* Override any fixed height/width to prevent layout issues */
+.header, .header-container {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.logo {
+  margin-left: 0 !important;
+}

@@ -1,0 +1,210 @@
+/* Fixed Width CSS for all pages */
+
+/* Fix container width across all pages */
+.container, 
+.section-container,
+.modern-hero .container,
+.contact-container,
+.about-container,
+.products-container,
+
+
+.industries-hero-content,
+.industries-section .container,
+.product-section-new .container,
+.testimonials-section .container,
+.about-hero .container,
+.modern-cta .container {
+    width: 100%;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Fix for specific sections that might override the container */
+section .container,
+.hero-section .container,
+.about-section .container,
+.products-section .container,
+.testimonials-section .container,
+.contact-section .container,
+.modern-hero .container,
+.flip-cards-section .container,
+.modern-cta .container,
+.product-grid-wrapper .container {
+    max-width: 1200px !important;
+}
+
+/* Special sections with normal width */
+.full-width-section .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1240px) {
+    .container,
+    .section-container,
+    .modern-hero .container,
+    .contact-container,
+    .about-container,
+    .products-container,
+   
+
+    .industries-hero-content,
+    .industries-section .container,
+    .product-section-new .container,
+    .testimonials-section .container,
+    .about-hero .container, 
+    .modern-cta .container {
+        max-width: 1100px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container,
+    .section-container,
+    .modern-hero .container,
+    .contact-container,
+    .about-container,
+    .products-container,
+  
+
+    .industries-hero-content,
+    .industries-section .container,
+    .product-section-new .container,
+    .testimonials-section .container,
+    .about-hero .container, 
+    .modern-cta .container {
+        max-width: 95% !important;
+    }
+    
+   
+}
+
+@media (max-width: 767px) {
+    .container,
+    .section-container,
+    .modern-hero .container,
+    .contact-container,
+    .about-container,
+    .products-container,
+ 
+    
+    .industries-hero-content,
+    .industries-section .container,
+    .product-section-new .container,
+    .testimonials-section .container,
+    .about-hero .container, 
+    .modern-cta .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container,
+    .section-container,
+    .modern-hero .container,
+    .contact-container,
+    .about-container,
+    .products-container,
+
+
+    .industries-hero-content,
+    .industries-section .container,
+    .product-section-new .container,
+    .testimonials-section .container,
+    .about-hero .container, 
+    .modern-cta .container {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+    }
+    
+    
+}
+
+/* Exception for timeline, our journey etc. where different widths are acceptable */
+.timeline-container,
+.mission-vision-section .container,
+.history-section .container {
+    /* These sections can have their own width management */
+} 
+
+/* Footer Quick Links Fix - Apply to all pages */
+.footer-links-column:first-child .footer-links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 0.8rem !important;
+  justify-content: center !important;
+}
+
+/* Fix for both 'li' and 'l' tags in footer quick links */
+.footer-links-column:first-child .footer-links li,
+.footer-links-column:first-child .footer-links l {
+  margin: 0 !important;
+  display: inline-block !important;
+  position: relative !important;
+  padding: 0 !important;
+}
+
+/* Fix for both 'li' and 'l' tag links */
+.footer-links-column:first-child .footer-links li a,
+.footer-links-column:first-child .footer-links l a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  padding: 6px 12px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  font-size: 0.9rem !important;
+  white-space: nowrap !important;
+  border-radius: 30px !important;
+}
+
+/* Remove dots between items */
+.footer-links-column:first-child .footer-links li:not(:last-child)::after,
+.footer-links-column:first-child .footer-links l:not(:last-child)::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Fix hover states */
+.footer-links-column:first-child .footer-links li a:hover,
+.footer-links-column:first-child .footer-links l a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Footer float fix for all pages - especially industries.html */
+.footer {
+    clear: both !important;
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.footer .footer-container {
+    transform: none !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important; 
+    box-sizing: border-box !important;
+}

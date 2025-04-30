@@ -1,0 +1,67 @@
+/* Fix for footer quick links dots */
+.footer-links-column:first-child .footer-links li:not(:last-child)::after,
+.footer-links-column:first-child .footer-links l:not(:last-child)::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Remove any potential dots from list items */
+.footer-links-column .footer-links li::after,
+.footer-links-column .footer-links l::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Make sure no pseudo elements are adding dots */
+.footer-links-column .footer-links li a::after,
+.footer-links-column .footer-links l a::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Ensure all pages have consistent footer link styling without dots */
+.footer-links a {
+    text-decoration: none !important;
+}
+
+/* Global fix for footer contact items to display icons and text side by side */
+.footer-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0.8rem !important;
+}
+
+.footer-contact-item i {
+    margin-right: 10px !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important; /* Reset any top margin */
+}
+
+/* Mobile specific fixes */
+@media (max-width: 768px) {
+    .footer-links-column:first-child .footer-links li:not(:last-child)::after,
+    .footer-links-column:first-child .footer-links l:not(:last-child)::after {
+        content: none !important;
+        display: none !important;
+    }
+    
+    /* Make sure dots are really gone in mobile view */
+    .footer-links-column .footer-links li::after,
+    .footer-links-column .footer-links l::after {
+        content: none !important;
+        display: none !important;
+    }
+    
+    /* Reinforce contact item styling for mobile */
+    .footer-contact-item {
+        display: flex !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .footer-contact-item i {
+        margin-right: 10px !important;
+        margin-bottom: 0 !important;
+        margin-top: 3px !important; /* Small top margin for better alignment with text */
+    }
+} 

@@ -1,0 +1,67 @@
+/* 
+* FOOTER CONTACT ITEMS FIX
+* This file contains aggressive CSS to force footer contact items 
+* to display icons beside text, not above text
+*/
+
+/* Super aggressive footer contact item fix - Max specificity */
+.footer .footer-container .footer-main .footer-links-section .footer-links-column .footer-contact .footer-contact-item,
+.footer-links-column .footer-contact .footer-contact-item,
+.footer-contact .footer-contact-item,
+footer .footer-contact-item,
+.footer-contact-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin-bottom: 0.8rem !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.footer .footer-container .footer-main .footer-links-section .footer-links-column .footer-contact .footer-contact-item i,
+.footer-links-column .footer-contact .footer-contact-item i,
+.footer-contact .footer-contact-item i,
+footer .footer-contact-item i,
+.footer-contact-item i {
+    margin-right: 10px !important;
+    margin-bottom: 0 !important;
+    margin-top: 3px !important;
+    display: inline-block !important;
+    min-width: 15px !important;
+    max-width: 15px !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+}
+
+/* Additional fix to make sure no styles are overriding */
+body .footer .footer-contact-item {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+body .footer .footer-contact-item i {
+    margin-right: 10px !important;
+    margin-top: 3px !important;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .footer-contact-item,
+    .footer .footer-contact-item,
+    body .footer .footer-contact-item {
+        display: flex !important;
+        flex-direction: row !important;
+        text-align: left !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .footer-contact-item i,
+    .footer .footer-contact-item i,
+    body .footer .footer-contact-item i {
+        margin-right: 10px !important;
+        margin-top: 3px !important;
+        min-width: 15px !important;
+    }
+} 

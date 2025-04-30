@@ -1,0 +1,95 @@
+/* Supreme Logo Update Styles */
+
+/* Common styles for the logo across all pages */
+.logo img,
+.footer-logo-img,
+.mobile-logo img,
+.modern-cta-icon img,
+.premium-cta-icon img {
+  object-fit: contain !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Header logo styles */
+.logo img {
+  width: 80px !important;
+  height: auto !important;
+  max-height: 60px !important;
+}
+
+/* Mobile header logo styles */
+.mobile-logo img {
+  width: 50px !important;
+  height: auto !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  border-radius: 0 !important;
+}
+
+/* Footer logo styles */
+.footer-logo-img {
+  width: 100px !important;
+  height: auto !important;
+  max-height: 80px !important;
+  background-color: transparent !important;
+}
+
+/* CTA section logo styles */
+.modern-cta-icon img,
+.premium-cta-icon img {
+  width: 120px !important;
+  height: auto !important;
+  max-height: 100px !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Logo hover effects - subtle zoom */
+.logo:hover img,
+.footer-logo:hover .footer-logo-img {
+  transform: scale(1.05) !important;
+}
+
+/* Logo transitions */
+.logo img,
+.footer-logo-img,
+.mobile-logo img,
+.modern-cta-icon img,
+.premium-cta-icon img {
+  transition: all 0.3s ease !important;
+}
+
+/* Media queries for responsive logos */
+@media (max-width: 768px) {
+  .logo img {
+    width: 70px !important;
+  }
+  
+  .footer-logo-img {
+    width: 80px !important;
+  }
+  
+  .modern-cta-icon img,
+  .premium-cta-icon img {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 60px !important;
+  }
+  
+  .footer-logo-img {
+    width: 70px !important;
+  }
+  
+  .modern-cta-icon img,
+  .premium-cta-icon img {
+    width: 80px !important;
+  }
+} 

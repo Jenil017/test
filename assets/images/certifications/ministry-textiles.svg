@@ -1,0 +1,31 @@
+<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+    <!-- Gradient background -->
+    <defs>
+        <linearGradient id="motGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1A3C40" />
+            <stop offset="100%" stop-color="#25535A" />
+        </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="100" height="60" rx="5" fill="url(#motGradient)"/>
+    
+    <!-- Enhanced design elements -->
+    <path d="M25,25 H95 M25,55 H95" stroke="white" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Textile pattern -->
+    <path d="M20,20 H100 M20,30 H100 M20,40 H100 M20,50 H100 M20,60 H100" stroke="white" stroke-width="0.2" opacity="0.2"/>
+    <path d="M20,20 V60 M40,20 V60 M60,20 V60 M80,20 V60 M100,20 V60" stroke="white" stroke-width="0.2" opacity="0.2"/>
+    
+    <!-- Text elements -->
+    <text x="60" y="30" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">MINISTRY OF</text>
+    <text x="60" y="43" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TEXTILES</text>
+    <text x="60" y="52" font-family="Arial" font-size="5" font-weight="normal" fill="white" text-anchor="middle">GOVERNMENT OF INDIA</text>
+    
+    <!-- Loom and thread symbol -->
+    <rect x="30" y="25" width="60" height="30" rx="2" fill="none" stroke="white" stroke-width="0.5" opacity="0.5"/>
+    <path d="M30,30 L50,30 L60,40 L70,30 L90,30 L90,50 L70,50 L60,40 L50,50 L30,50 Z" fill="none" stroke="white" stroke-width="1.5"/>
+    
+    <!-- Spinning wheel element -->
+    <circle cx="60" cy="40" r="15" fill="none" stroke="white" stroke-width="0.5" opacity="0.5"/>
+    <circle cx="60" cy="40" r="10" fill="none" stroke="white" stroke-width="0.3" opacity="0.5"/>
+    <path d="M60,25 V30 M60,50 V55 M45,40 H50 M70,40 H75 M48,28 L52,32 M72,48 L68,44 M48,52 L52,48 M72,32 L68,36" stroke="white" stroke-width="0.7" opacity="0.7"/>
+</svg> 

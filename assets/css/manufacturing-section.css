@@ -1,0 +1,408 @@
+/* Premium Manufacturing Section - Regal Mauve Theme */
+
+.manufacturing-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f1f6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.manufacturing-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/texture-light.png');
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+/* Decorative element */
+.manufacturing-section::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(164, 72, 113, 0.03) 0%, rgba(164, 72, 113, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.manufacturing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.manufacturing-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.manufacturing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-family: var(--font-family-heading);
+  position: relative;
+  display: inline-block;
+}
+
+.manufacturing-title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #a44871;
+  border-radius: 2px;
+}
+
+/* Subtle shine effect on the title */
+.manufacturing-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.manufacturing-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+.manufacturing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.manufacturing-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(230, 230, 240, 0.7);
+}
+
+.manufacturing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(164, 72, 113, 0.1);
+}
+
+.manufacturing-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #a44871;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.manufacturing-card:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.manufacturing-img-container {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.manufacturing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.manufacturing-card:hover .manufacturing-img {
+  transform: scale(1.05);
+}
+
+.manufacturing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.manufacturing-card:hover .manufacturing-overlay {
+  opacity: 1;
+}
+
+.manufacturing-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacturing-process {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manufacturing-process i {
+  color: #a44871;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background: rgba(164, 72, 113, 0.08);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.manufacturing-card:hover .manufacturing-process {
+  color: #a44871;
+}
+
+.manufacturing-card:hover .manufacturing-process i {
+  transform: rotateY(180deg);
+  background: #a44871;
+  color: white;
+}
+
+.manufacturing-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.manufacturing-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #a44871;
+  border: 1px solid #a44871;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.manufacturing-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(164, 72, 113, 0.2);
+  transition: transform 0.4s ease;
+  transform: skewX(-15deg);
+}
+
+.manufacturing-button:hover {
+  background-color: #a44871;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(164, 72, 113, 0.2);
+}
+
+.manufacturing-button:hover::before {
+  transform: translateX(100%) skewX(-15deg);
+}
+
+.manufacturing-button i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.manufacturing-button:hover i {
+  transform: translateX(3px);
+}
+
+/* Card badge */
+.manufacturing-card::before {
+  content: "Premium";
+  position: absolute;
+  top: 15px;
+  right: -35px;
+  background: #a44871;
+  color: white;
+  padding: 5px 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  letter-spacing: 1px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .manufacturing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .manufacturing-img-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .manufacturing-section {
+    padding: 4rem 0;
+  }
+  
+  .manufacturing-title {
+    font-size: 2rem;
+  }
+  
+  .manufacturing-subtitle {
+    font-size: 1rem;
+  }
+  
+  .manufacturing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .manufacturing-process {
+    font-size: 1.3rem;
+  }
+  
+  .manufacturing-card::before {
+    top: 10px;
+    right: -40px;
+    padding: 4px 40px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .manufacturing-section {
+    padding: 3rem 0;
+  }
+  
+  .manufacturing-title {
+    font-size: 1.75rem;
+  }
+  
+  .manufacturing-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .manufacturing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .manufacturing-img-container {
+    height: 180px;
+  }
+  
+  .manufacturing-content {
+    padding: 1.5rem;
+  }
+  
+  .manufacturing-process i {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+}
+
+/* Add special effects for the first card to make it stand out */
+.manufacturing-card:first-child {
+  border-top: 3px solid #a44871;
+}
+
+.manufacturing-card:first-child .manufacturing-process {
+  color: #a44871;
+}
+
+.manufacturing-card:first-child .manufacturing-img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(164, 72, 113, 0.3) 0%, transparent 40%);
+  z-index: 1;
+}
+
+/* Fix for touch devices */
+@media (hover: none) {
+  .manufacturing-card:active {
+    transform: translateY(-5px);
+  }
+  
+  .manufacturing-button:active {
+    background-color: #a44871;
+    color: white;
+  }
+  
+  .manufacturing-card:active .manufacturing-process {
+    color: #a44871;
+  }
+  
+  .manufacturing-card:active::after {
+    transform: scaleX(1);
+  }
+} 

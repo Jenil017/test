@@ -1,0 +1,33 @@
+<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+    <!-- Gradient background -->
+    <defs>
+        <linearGradient id="bisGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1A3C40" />
+            <stop offset="100%" stop-color="#25535A" />
+        </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="100" height="60" rx="5" fill="url(#bisGradient)"/>
+    
+    <!-- Thread weave pattern background -->
+    <path d="M20,20 H100 M20,30 H100 M20,40 H100 M20,50 H100 M20,60 H100" stroke="white" stroke-width="0.3" opacity="0.2"/>
+    <path d="M20,20 V60 M40,20 V60 M60,20 V60 M80,20 V60 M100,20 V60" stroke="white" stroke-width="0.3" opacity="0.2"/>
+    
+    <!-- Enhanced logo elements -->
+    <text x="60" y="30" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">BUREAU OF</text>
+    <text x="60" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">BIS</text>
+    <text x="60" y="55" font-family="Arial" font-size="6" font-weight="bold" fill="white" text-anchor="middle">INDIAN STANDARDS</text>
+    
+    <circle cx="60" cy="40" r="25" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+    <circle cx="60" cy="40" r="20" fill="none" stroke="white" stroke-width="2"/>
+    
+    <!-- Simplified Ashoka Chakra (Indian emblem element) -->
+    <circle cx="60" cy="40" r="8" fill="none" stroke="white" stroke-width="0.5" opacity="0.8"/>
+    <path d="M60,32 L60,48 M52,40 L68,40" stroke="white" stroke-width="0.5" opacity="0.8"/>
+    <path d="M53.5,33.5 L66.5,46.5 M53.5,46.5 L66.5,33.5" stroke="white" stroke-width="0.5" opacity="0.8"/>
+    
+    <!-- Thread and needle symbol -->
+    <path d="M30,25 Q35,35 30,45" stroke="white" stroke-width="1" fill="none" opacity="0.8"/>
+    <path d="M30,25 L28,23 M30,45 L28,47" stroke="white" stroke-width="0.5" opacity="0.8"/>
+    <path d="M90,25 Q85,35 90,45" stroke="white" stroke-width="1" fill="none" opacity="0.8"/>
+    <path d="M90,25 L92,23 M90,45 L92,47" stroke="white" stroke-width="0.5" opacity="0.8"/>
+</svg> 
