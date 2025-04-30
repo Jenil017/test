@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/footer-improvements.css">
     <link rel="stylesheet" href="assets/css/fixed-width.css">
     <link rel="stylesheet" href="assets/css/fix-footer-dots.css">
-    <link rel="stylesheet" href="assets/css/logo-update.css">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -100,11 +99,7 @@
     }
     
     /* Header with Regal Mauve Theme */
-    .header {
-      background: var(--primary-mauve-gradient) !important;
-      box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3) !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
+    /* Removing all header styling */
     
     .header.scrolled {
       background: linear-gradient(135deg, rgba(164, 72, 113, 0.95) 0%, rgba(138, 57, 96, 0.95) 100%) !important;
@@ -113,47 +108,7 @@
     }
     
     /* Navigation Links */
-    .nav-link {
-      padding: 0.5rem 0.8rem !important;
-      transition: all 0.3s ease !important;
-      font-weight: 500 !important;
-      letter-spacing: 0.3px !important;
-      position: relative !important;
-    }
-    
-    .nav-link::after {
-      content: '' !important;
-      position: absolute !important;
-      bottom: 4px !important;
-      left: 50% !important;
-      width: 0 !important;
-      height: 2px !important;
-      background: #ffffff !important;
-      transition: all 0.3s ease !important;
-      transform: translateX(-50%) !important;
-      opacity: 0 !important;
-    }
-    
-    .nav-link:hover {
-      color: #ffffff !important;
-      transform: translateY(-2px) !important;
-    }
-    
-    .nav-link:hover::after {
-      width: 60% !important;
-      opacity: 1 !important;
-    }
-    
-    .nav-link.active {
-      color: #ffffff !important;
-      font-weight: 600 !important;
-    }
-    
-    .nav-link.active::after {
-      width: 60% !important;
-      opacity: 1 !important;
-      background: #D4AF37 !important; /* Gold underline for active link */
-    }
+    /* .nav-link { ... } - REMOVED */
     
     /* Hero Section Mauve Theme */
     .industries-hero-modern {
@@ -391,22 +346,62 @@
     }
     
     /* Fix header nav positioning */
+    /* .header-container { ... } - REMOVED */
+    /* .desktop-nav { ... } - REMOVED */
+    /* .nav-menu { ... } - REMOVED */
+    /* .nav-item { ... } - REMOVED */
+    /* .nav-link { ... } - REMOVED */
+    /* logo styling - REMOVED */
+    /* menu-toggle - REMOVED */
+    /* active page indicator - REMOVED */
+    /* Fix for About being incorrectly marked as active - REMOVED */
+    </style>
+    <!-- Create a completely new and simplified header style -->
+    <!-- Removing all header CSS to rely solely on header-improvements.css -->
+    <!-- <style>
+    /* Remove conflicting styles and write a clean set */
+    .header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background-color: rgba(110, 42, 74, 0.95) !important;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important;
+      transition: all 0.3s ease !important;
+    }
+    
     .header-container {
       display: flex !important;
       justify-content: space-between !important;
       align-items: center !important;
-      padding: 0 1.5rem !important;
       height: 80px !important;
       max-width: 1200px !important;
       margin: 0 auto !important;
-      width: 100% !important;
-      box-sizing: border-box !important;
+      padding: 0 1.5rem !important;
+    }
+    
+    .logo {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+      text-decoration: none !important;
+    }
+    
+    .logo img {
+      width: 80px !important;
+      height: auto !important;
+    }
+    
+    .logo-text {
+      font-size: 1.4rem !important;
+      font-weight: 700 !important;
+      color: #ffffff !important;
     }
     
     .desktop-nav {
       display: flex !important;
       align-items: center !important;
-      margin-left: auto !important;
     }
     
     .nav-menu {
@@ -414,31 +409,12 @@
       list-style: none !important;
       margin: 0 !important;
       padding: 0 !important;
-      align-items: center !important;
     }
     
-    /* Adjust spacing between nav items */
     .nav-item {
-      margin: 0 8px !important;
-      position: relative !important;
+      margin: 0 10px !important;
     }
     
-    /* Remove all the other nav item specific selectors as they're creating conflicts */
-    .nav-item:nth-child(3) .nav-link,
-    .nav-item:nth-child(2) .nav-link {
-      /* Reset any specific styles */
-      color: inherit !important;
-      font-weight: inherit !important;
-    }
-    
-    .nav-item:nth-child(3) .nav-link::after,
-    .nav-item:nth-child(2) .nav-link::after {
-      /* Reset any specific styles */
-      opacity: inherit !important;
-      width: inherit !important;
-    }
-    
-    /* Define standard link styling */
     .nav-link {
       display: block !important;
       padding: 10px 18px !important;
@@ -473,7 +449,6 @@
       opacity: 1 !important;
     }
     
-    /* Then define active state */
     .nav-link.active {
       color: #ffffff !important;
       font-weight: 600 !important;
@@ -484,53 +459,49 @@
       opacity: 1 !important;
     }
     
-    /* Make sure the logo is positioned correctly */
-    .logo {
-      display: flex !important;
-      align-items: center !important;
-      gap: 0.75rem !important;
-      padding: 0.5rem 0 !important;
-    }
-    
-    /* Ensure mobile menu toggle is correctly positioned */
     .menu-toggle {
-      margin-left: 1rem !important;
+      display: none !important;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer !important;
+      width: 40px !important;
+      height: 40px !important;
+      padding: 0 !important;
+      margin-left: 15px !important;
     }
     
-    /* Fix active page indicator - this is the Industries page */
-    .nav-item:nth-child(3) .nav-link {
-      color: #ffffff !important;
-      font-weight: 600 !important;
-    }
-    
-    .nav-item:nth-child(3) .nav-link::after {
-      opacity: 1 !important;
-      width: 60% !important;
-    }
-    
-    /* Fix for About being incorrectly marked as active */
-    .nav-item:nth-child(2) .nav-link {
-      color: rgba(255, 255, 255, 0.85) !important;
-      font-weight: 500 !important;
-    }
-    
-    .nav-item:nth-child(2) .nav-link::after {
-      opacity: 0 !important;
-      width: 0 !important;
-    }
-    
-    .mobile-nav-item:nth-child(2) .mobile-nav-link {
-      background: rgba(255, 255, 255, 0.08) !important;
-      border-left: none !important;
-      font-weight: 500 !important;
+    .menu-toggle span {
+      display: block !important;
+      width: 25px !important;
+      height: 2px !important;
+      background-color: #ffffff !important;
+      margin: 5px auto !important;
+      transition: all 0.3s ease !important;
     }
     
     @media (max-width: 768px) {
+      .desktop-nav {
+        display: none !important;
+      }
+      
+      .menu-toggle {
+        display: block !important;
+      }
+      
       .header-container {
+        height: 70px !important;
         padding: 0 1rem !important;
       }
+      
+      .logo img {
+        width: 60px !important;
+      }
+      
+      .logo-text {
+        font-size: 1.2rem !important;
+      }
     }
-    </style>
+    </style> -->
 </head>
 <body class="bg-background font-sans text-text-primary">
     <div class="preloader">
@@ -563,14 +534,100 @@
           </button>
       </div>
   </header>
+  
+  <!-- Remove hover effects from logo -->
+  <style>
+    /* Remove all hover effects from logo and company name */
+    .header .logo:hover img,
+    .header .logo img,
+    header .logo:hover img,
+    header .logo img {
+      transform: none !important;
+      transition: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      width: 80px !important;
+      height: auto !important;
+      max-height: 60px !important;
+      border-radius: 0 !important;
+    }
+    
+    .header .logo:hover .logo-text,
+    .header .logo .logo-text,
+    header .logo:hover .logo-text,
+    header .logo .logo-text {
+      color: #ffffff !important;
+      transform: none !important;
+      transition: none !important;
+      text-shadow: none !important;
+    }
+    
+    /* Ensure the same applies to mobile logo */
+    .mobile-logo:hover img,
+    .mobile-logo img {
+      transform: none !important;
+      transition: none !important;
+    }
+  </style>
+
+  <!-- Fix for logo styling -->
+  <style>
+    /* !important styles to override any other styles */
+    .header .logo {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+      text-decoration: none !important;
+    }
+    
+    /* Override any circular styling on the logo with maximum specificity */
+    .header .logo img,
+    header .logo img,
+    body .header .logo img {
+      width: 80px !important;
+      height: auto !important;
+      max-height: 60px !important;
+      border-radius: 0 !important;
+      object-fit: contain !important;
+      box-shadow: none !important;
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    
+    /* Logo text styling matching other pages */
+    .header .logo .logo-text,
+    header .logo .logo-text,
+    body .header .logo .logo-text {
+      font-size: 1.4rem !important;
+      font-weight: 700 !important;
+      color: #ffffff !important;
+      margin-left: 5px !important;
+    }
+    
+    /* Match mobile logo styling with other pages */
+    .mobile-logo img,
+    .mobile-menu-header .mobile-logo img,
+    body .mobile-menu .mobile-menu-header .mobile-logo img {
+      width: 50px !important;
+      height: auto !important;
+      min-width: 50px !important;
+      min-height: 50px !important;
+      border-radius: 0 !important;
+      object-fit: contain !important;
+      box-shadow: none !important;
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  </style>
 
   <!-- Mobile Side Menu -->
   <div class="mobile-menu">
       <div class="mobile-menu-header">
-          <a href="index.html" class="mobile-logo">
-              <img src="img3.jpg" alt="Supreme Thread Logo">
-              <span>Supreme Thread</span>
-          </a>
+          
           <button class="mobile-menu-close">
               <span>&times;</span>
           </button>
@@ -654,7 +711,7 @@
         background: linear-gradient(120deg, #ffffff 10%, #f5f7f8 100%);
         overflow: hidden;
         width: 100%;
-        padding-top: 0;
+        padding-top: 80px; /* Add padding to account for fixed header */
         margin-top: 0;
         margin-bottom: 0; /* Ensure no extra margin */
         box-sizing: border-box; /* Add box-sizing */
@@ -1380,6 +1437,450 @@
       });
     }
     </script>
+
+ <!-- Process Section -->
+ <section class="section process-section" id="process-section">
+  <div class="container">
+      <h2 class="section-heading" style="text-align: center; text-decoration: underline;">Our Manufacturing Process</h2>
+      <p class="section-subtitle" style="text-align: center;" data-aos="fade-up" data-aos-delay="100">Our precision-engineered process ensures the highest quality in every thread we produce</p>
+      
+      <div class="process-steps">
+          <div class="process-step">
+              <div class="process-icon">
+                  <i class="fas fa-tint"></i>
+              </div>
+              <h3 class="process-title">Yarn Dyeing</h3>
+              <p class="process-description">Our state-of-the-art dyeing facility ensures precise color matching and superior colorfastness for all types of yarn.</p>
+              </div>
+          
+          <div class="process-step">
+              <div class="process-icon">
+                  <i class="fas fa-sync-alt"></i>
+          </div>
+              <h3 class="process-title">Winding</h3>
+              <p class="process-description">Controlled tension winding ensures perfect package formation for downstream processes and end-use applications.</p>
+              </div>
+          
+          <div class="process-step">
+              <div class="process-icon">
+                  <i class="fas fa-cog"></i>
+              </div>
+              <h3 class="process-title">Coning</h3>
+              <p class="process-description">Final precision winding into cones designed for optimal unwinding in industrial and commercial applications.</p>
+                  </div>
+              </div>
+      
+      <div class="process-button">
+          <a href="javascript:void(0)" id="learn-more-process-btn" class="example-btn">Learn More About Our Process</a>
+          </div>
+      
+      <!-- Detailed Manufacturing Process Section (Hidden by Default) -->
+      <div class="detailed-process-section" id="detailed-process-section" style="display: none;">
+          <h3 class="detailed-process-title" style="text-align: center; text-decoration: underline;">Our Complete Thread Manufacturing Process</h3>
+          <div class="detailed-process-steps">
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🧶</div>
+                  <h4 class="detailed-process-step-title">Raw Material Selection</h4>
+                  <p class="detailed-process-description">Sourcing the finest fibers for optimal performance.</p>
+      </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🔄</div>
+                  <h4 class="detailed-process-step-title">Spinning</h4>
+                  <p class="detailed-process-description">Converting fibers into yarn with precision technology.</p>
+  </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🎨</div>
+                  <h4 class="detailed-process-step-title">Dyeing</h4>
+                  <p class="detailed-process-description">Advanced coloration with exceptional consistency.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🔍</div>
+                  <h4 class="detailed-process-step-title">Quality Control</h4>
+                  <p class="detailed-process-description">Rigorous testing at every production stage.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">💧</div>
+                  <h4 class="detailed-process-step-title">Finishing</h4>
+                  <p class="detailed-process-description">Special treatments for enhanced performance.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🧵</div>
+                  <h4 class="detailed-process-step-title">Twisting</h4>
+                  <p class="detailed-process-description">Creating the perfect structure and strength.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">📏</div>
+                  <h4 class="detailed-process-step-title">Winding</h4>
+                  <p class="detailed-process-description">Precision winding for optimal delivery format.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">📦</div>
+                  <h4 class="detailed-process-step-title">Packaging</h4>
+                  <p class="detailed-process-description">Secure, eco-friendly packaging for global delivery.</p>
+              </div>
+              
+              <div class="detailed-process-step">
+                  <div class="detailed-process-icon">🧪</div>
+                  <h4 class="detailed-process-step-title">Testing</h4>
+                  <p class="detailed-process-description">Lab-tested for strength, color, and durability.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+<style>
+  .process-section {
+      padding: 5rem 0;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+      background-image: 
+          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a3c40' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+          url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a3c40' fill-opacity='0.05'%3E%3Cpath d='M0 0h20L0 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-size: 120px, 60px;
+      background-position: center center, top right;
+  }
+  
+  /* Remove only the circle patterns */
+  .process-section::before {
+      content: none; /* Removing circle patterns */
+  }
+  
+  /* Keep the thread patterns in the after element */
+  .process-section::after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2 0C18 8.765 20.244 11 23 11c2.76 0 5-2.236 5-4.995V7.006C28 5.235 25.756 3 23 3c-2.76 0-5 2.236-5 4.995v9.988z' fill='%231a3c40' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+      bottom: -50px;
+      right: -50px;
+      opacity: 0.7;
+      z-index: 0;
+  }
+  
+  .process-steps {
+  display: flex;
+      justify-content: space-between;
+      margin: 3rem 0;
+      position: relative;
+      z-index: 2;
+  }
+  
+  .process-step {
+      flex: 1;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+      z-index: 2;
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      border: 1px solid rgba(26, 60, 64, 0.08);
+      transition: transform 0.3s ease;
+  }
+  
+  .process-step:hover {
+      transform: translateY(-5px);
+  }
+  
+  .process-step::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+      background-color: rgba(26, 60, 64, 0.08);
+      border-radius: 50%;
+      z-index: -1;
+  }
+  
+  .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 110px;
+      right: 0;
+      width: calc(50% - 40px);
+      height: 2px;
+      background-color: var(--primary);
+      z-index: 1;
+  }
+  
+  .process-step:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: calc(50% - 40px);
+      height: 2px;
+      background-color: var(--primary);
+      z-index: 1;
+  }
+  
+  .process-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 3;
+      height: 60px;
+      width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      background-color: rgba(26, 60, 64, 0.1);
+  border-radius: 50%;
+      margin: 0 auto 1.5rem auto;
+  transition: all 0.3s ease;
+}
+
+  .process-step:hover .process-icon {
+      background-color: var(--primary);
+      color: white;
+      transform: scale(1.1);
+  }
+  
+  /* Laptop specific fixes for manufacturing process */
+  @media (min-width: 992px) and (max-width: 1366px) {
+      .process-steps {
+          display: flex;
+          flex-direction: row; 
+          justify-content: center;
+          gap: 20px;
+      }
+      
+      .process-step {
+          flex: 1 1 33.333%;
+          min-width: 220px;
+          max-width: 33.333%;
+          margin: 0;
+      }
+      
+      /* Ensure connecting lines are positioned correctly */
+      .process-step:not(:last-child)::after {
+          width: 80px;
+          right: -40px;
+      }
+      
+      .process-step:not(:first-child)::before {
+          width: 80px;
+          left: -40px;
+      }
+  }
+  
+  .process-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+  }
+  
+  .process-description {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+  }
+  
+  .process-button {
+      text-align: center;
+      margin-top: 1rem;
+  position: relative;
+      z-index: 3;
+  }
+  
+  /* Detailed Process Section Styles */
+  .detailed-process-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: rgba(247, 249, 250, 0.9);
+      border-radius: 1.5rem;
+      box-shadow: none;
+      animation: fadeIn 0.7s ease-out forwards;
+      position: relative;
+      z-index: 2;
+      border: 1px solid rgba(26, 60, 64, 0.08);
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%231a3c40' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+      background-size: 120px;
+      background-position: center;
+      background-opacity: 0.5;
+  }
+  
+  .detailed-process-section::before {
+  content: '';
+  position: absolute;
+      top: 0;
+  left: 0;
+      width: 100%;
+      height: 100%;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary);
+      border-radius: 3px;
+  }
+  
+  .detailed-process-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+  }
+  
+  .detailed-process-step {
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 1rem;
+      box-shadow: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      border: 1px solid rgba(26, 60, 64, 0.05);
+  }
+  
+  .detailed-process-step:hover {
+      transform: translateY(-8px);
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .detailed-process-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+  }
+  
+  .detailed-process-step-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+  }
+  
+  .detailed-process-description {
+  font-size: 0.95rem;
+      color: var(--text-secondary);
+  line-height: 1.5;
+  }
+  
+  @media (max-width: 992px) {
+      .process-steps {
+          flex-direction: column;
+          margin: 2rem 0;
+      }
+      
+      .detailed-process-steps {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .process-step {
+          margin-bottom: 3rem;
+      }
+      
+      .process-step:not(:last-child)::after {
+          width: 2px;
+          height: 50px;
+          top: auto;
+          bottom: -50px;
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      
+      .process-step:not(:first-child)::before {
+          display: none;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .detailed-process-steps {
+          grid-template-columns: 1fr;
+      }
+      
+      .process-section {
+          padding: 3rem 1rem;
+      }
+      
+      .process-section::before,
+      .process-section::after {
+          opacity: 0.2;
+      }
+      
+      .process-steps {
+          margin: 2rem 0;
+      }
+      
+      .process-step {
+          padding: 1.5rem 1rem;
+          margin-bottom: 2.5rem;
+      }
+      
+      .process-icon {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          height: 50px;
+          width: 50px;
+      }
+      
+      .process-title {
+          font-size: 1.3rem;
+          margin-bottom: 0.8rem;
+      }
+      
+      .process-description {
+          font-size: 0.95rem;
+      }
+      
+      .detailed-process-section {
+          padding: 1.5rem 1rem;
+      }
+      
+      .detailed-process-title {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+      }
+      
+      .detailed-process-step {
+          padding: 1.2rem 1rem;
+      }
+      
+      .detailed-process-icon {
+          font-size: 2rem;
+      }
+      
+      .detailed-process-step-title {
+          font-size: 1.1rem;
+      }
+      
+      .detailed-process-description {
+          font-size: 0.9rem;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .process-section::before,
+      .process-section::after {
+          display: none;
+  }
+}
+</style>
+</section>
+
+
      <!-- Call to Action Section -->
     <section class="premium-cta-section">
       <div class="premium-cta-container">
@@ -2138,339 +2639,40 @@
             min-height: calc(100vh - 70px) !important;
         }
     }
-    
-    /* Premium Header Enhancements */
-    .header {
-        background: linear-gradient(135deg, #a44871 0%, #8a3960 100%) !important;
-        box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-        height: 80px !important;
-        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-    }
-    
-    .header.scrolled {
-        background: linear-gradient(135deg, rgba(164, 72, 113, 0.95) 0%, rgba(138, 57, 96, 0.95) 100%) !important;
-        backdrop-filter: blur(8px) !important;
-        box-shadow: 0 5px 25px rgba(164, 72, 113, 0.4) !important;
-        height: 70px !important;
-    }
-    
-    .logo-text {
-        color: #ffffff !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.5px !important;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-    }
-    
-    .logo img {
-        border: 2px solid #ffffff !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    .logo:hover img {
-        transform: scale(1.05) !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
-        border-color: #D4AF37 !important;
-    }
-    
-    .nav-link {
-        color: rgba(255, 255, 255, 0.85) !important;
-        font-weight: 500 !important;
-        letter-spacing: 0.3px !important;
-        padding: 8px 16px !important;
-        transition: all 0.3s ease !important;
-        position: relative !important;
-    }
-    
-    .nav-link::after {
-        content: '' !important;
-        position: absolute !important;
-        bottom: 4px !important;
-        left: 50% !important;
-        width: 0 !important;
-        height: 2px !important;
-        background: #ffffff !important;
-        transition: all 0.3s ease !important;
-        transform: translateX(-50%) !important;
-        opacity: 0 !important;
-    }
-    
-    .nav-link:hover {
-        color: #ffffff !important;
-        transform: translateY(-2px) !important;
-    }
-    
-    .nav-link:hover::after {
-        width: 60% !important;
-        opacity: 1 !important;
-    }
-    
-    .nav-link.active {
-        color: #ffffff !important;
-        font-weight: 600 !important;
-    }
-    
-    .nav-link.active::after {
-        width: 60% !important;
-        opacity: 1 !important;
-        background: #D4AF37 !important; /* Gold underline for active link */
-    }
-    
-    .menu-toggle {
-        background: rgba(255, 255, 255, 0.15) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    .menu-toggle:hover {
-        background: rgba(255, 255, 255, 0.25) !important;
-        transform: translateY(-2px) !important;
-    }
-    
-    /* Add subtle animation to header */
-    @keyframes headerGlow {
-        0% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
-        50% { box-shadow: 0 4px 25px rgba(164, 72, 113, 0.4); }
-        100% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
-    }
-    
-    .header {
-        animation: headerGlow 5s infinite alternate ease-in-out;
-    }
-    
-    /* Fix company name (logo text) to be white and single line */
-    .logo-text {
-        color: #ffffff !important;
-        white-space: nowrap !important;
-        overflow: visible !important;
-        font-size: 1.4rem !important;
-        font-weight: 700 !important;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
-    }
-    
-    @media (max-width: 768px) {
-        .logo-text {
-            font-size: 1.2rem !important;
-            max-width: 150px !important;
-            white-space: nowrap !important;
-        }
-        
-        .logo img {
-            width: 38px !important;
-            height: 38px !important;
-            margin-right: 8px !important;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .logo-text {
-            font-size: 1.1rem !important;
-        }
-        
-        .logo img {
-            width: 34px !important;
-            height: 34px !important;
-            margin-right: 6px !important;
-        }
-    }
     </style>
-    <style>
-    /* Premium Menu Toggle Button */
-    .menu-toggle {
-        background: rgba(255, 255, 255, 0.12) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        backdrop-filter: blur(4px) !important;
-        -webkit-backdrop-filter: blur(4px) !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
-        width: 46px !important;
-        height: 46px !important;
-        border-radius: 12px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-        position: relative !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        margin-right: 5px !important;
-    }
-    
-    .menu-toggle::before {
-        content: '' !important;
-        position: absolute !important;
-        top: -50% !important;
-        left: -50% !important;
-        width: 200% !important;
-        height: 200% !important;
-        background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%) !important;
-        opacity: 0 !important;
-        transition: opacity 0.6s ease !important;
-        pointer-events: none !important;
-    }
-    
-    .menu-toggle:hover {
-        background: rgba(255, 255, 255, 0.18) !important;
-        transform: translateY(-3px) !important;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
-    }
-    
-    .menu-toggle:hover::before {
-        opacity: 1 !important;
-    }
-    
-    .menu-toggle:active {
-        transform: translateY(1px) !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
-    }
-    
-    .menu-toggle span {
-        display: block !important;
-        width: 22px !important;
-        height: 2px !important;
-        margin: 3px 0 !important;
-        background: #ffffff !important;
-        border-radius: 10px !important;
-        transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
-        position: relative !important;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
-    }
-    
-    .menu-toggle:hover span {
-        width: 20px !important;
-    }
-    
-    .menu-toggle:hover span:nth-child(1) {
-        transform: translateY(1px) !important;
-    }
-    
-    .menu-toggle:hover span:nth-child(3) {
-        transform: translateY(-1px) !important;
-    }
-    
-    .menu-toggle.active {
-        background: rgba(255, 255, 255, 0.2) !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
-    }
-    
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 5px) !important;
-        width: 22px !important;
-    }
-    
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0 !important;
-        transform: translateX(-10px) !important;
-    }
-    
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -5px) !important;
-        width: 22px !important;
-    }
-    
-    /* Glowing effect on active */
-    .menu-toggle.active::after {
-        content: '' !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 70%) !important;
-        border-radius: 12px !important;
-        z-index: -1 !important;
-        animation: pulseGold 2s infinite !important;
-    }
-    
-    @keyframes pulseGold {
-        0% { opacity: 0.5; }
-        50% { opacity: 0.8; }
-        100% { opacity: 0.5; }
-    }
-    
-    /* Mobile menu styling improvements */
-    .mobile-menu {
-        background: linear-gradient(135deg, rgba(164, 72, 113, 0.97) 0%, rgba(118, 47, 83, 0.97) 100%) !important;
-        backdrop-filter: blur(10px) !important;
-        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.25) !important;
-        border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
-    
-    .mobile-menu-header {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-        padding: 20px !important;
-    }
-    
-    .mobile-menu-close {
-        background: rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
-        border-radius: 12px !important;
-        width: 40px !important;
-        height: 40px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        font-size: 1.6rem !important;
-        transition: all 0.3s ease !important;
-        border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    }
-    
-    .mobile-menu-close:hover {
-        background: rgba(255, 255, 255, 0.2) !important;
-        transform: rotate(90deg) !important;
-    }
-    
-    .mobile-nav-link {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
-        font-weight: 500 !important;
-        letter-spacing: 0.3px !important;
-        border-radius: 10px !important;
-        transition: all 0.3s ease !important;
-        margin-bottom: 8px !important;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
-    }
-    
-    .mobile-nav-link:hover, .mobile-nav-link.active {
-        background: rgba(255, 255, 255, 0.15) !important;
-        transform: translateX(5px) !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
-    }
-    
-    .mobile-nav-link.active {
-        border-left: 3px solid #D4AF37 !important;
-        font-weight: 600 !important;
-    }
-    
-    .mobile-social-links a {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border: 1px solid rgba(255, 255, 255, 0.15) !important;
-        color: #ffffff !important;
-        width: 40px !important;
-        height: 40px !important;
-        border-radius: 10px !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    .mobile-social-links a:hover {
-        background: rgba(255, 255, 255, 0.15) !important;
-        transform: translateY(-3px) !important;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
-    }
 
-    /* Add subtle animation to header */
-    @keyframes headerGlow {
-        0% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
-        50% { box-shadow: 0 4px 25px rgba(164, 72, 113, 0.4); }
-        100% { box-shadow: 0 4px 20px rgba(164, 72, 113, 0.3); }
-    }
-    
-    .header {
-        animation: headerGlow 5s infinite alternate ease-in-out;
-    }
-    </style>
+    <!-- Process Section Toggle Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get button and detailed process section elements
+        var learnMoreBtn = document.getElementById('learn-more-process-btn');
+        var detailedProcessSection = document.getElementById('detailed-process-section');
+        
+        // Add click event listener to the button
+        if (learnMoreBtn && detailedProcessSection) {
+            learnMoreBtn.addEventListener('click', function() {
+                console.log('Learn More button clicked');
+                
+                // Toggle visibility of detailed process section
+                if (detailedProcessSection.style.display === 'none') {
+                    detailedProcessSection.style.display = 'block';
+                    learnMoreBtn.textContent = 'Hide Process Details';
+                    
+                    // Scroll to the detailed section
+                    setTimeout(function() {
+                        detailedProcessSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                } else {
+                    detailedProcessSection.style.display = 'none';
+                    learnMoreBtn.textContent = 'Learn More About Our Process';
+                }
+            });
+            
+            console.log('Process toggle event listener added');
+        } else {
+            console.error('Process button or section not found');
+        }
+    });
+    </script>
 </body>
 </html>

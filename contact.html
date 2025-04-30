@@ -537,9 +537,9 @@
             <nav class="desktop-nav">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
             </nav>
             
@@ -552,13 +552,45 @@
         </div>
     </header>
 
+    <!-- Remove hover effects from logo -->
+    <style>
+      /* Remove all hover effects from logo and company name */
+      .header .logo:hover img,
+      .header .logo img,
+      header .logo:hover img,
+      header .logo img {
+        transform: none !important;
+        transition: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        width: 80px !important;
+        height: auto !important;
+        max-height: 60px !important;
+        border-radius: 0 !important;
+      }
+      
+      .header .logo:hover .logo-text,
+      .header .logo .logo-text,
+      header .logo:hover .logo-text,
+      header .logo .logo-text {
+        color: #ffffff !important;
+        transform: none !important;
+        transition: none !important;
+        text-shadow: none !important;
+      }
+      
+      /* Ensure the same applies to mobile logo */
+      .mobile-logo:hover img,
+      .mobile-logo img {
+        transform: none !important;
+        transition: none !important;
+      }
+    </style>
+
     <!-- Mobile Side Menu -->
     <div class="mobile-menu">
         <div class="mobile-menu-header">
-            <a href="index.html" class="mobile-logo">
-                <img src="img3.jpg" alt="Supreme Thread Logo">
-                <span>Supreme Thread</span>
-            </a>
+        
             <button class="mobile-menu-close">
                 <span>&times;</span>
             </button>

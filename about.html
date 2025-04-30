@@ -114,19 +114,21 @@
         }
         
         /* Specific fixes for navigation and layout elements */
-        .nav-link, .footer-links-title, .logo-text, .mobile-logo span, 
+        /* Remove header styling to rely on header-improvements.css */
+        /* .nav-link, .footer-links-title, .logo-text, .mobile-logo span, 
         .mobile-nav-link, .mobile-menu-header, .mv-value h4 {
             position: static;
             display: inline;
             width: auto;
             padding-bottom: 0;
-        }
+        } */
         
-        .nav-link::after, .footer-links-title::after, .logo-text::after, 
+        /* Remove header styling to rely on header-improvements.css */
+        /* .nav-link::after, .footer-links-title::after, .logo-text::after, 
         .mobile-logo span::after, .mobile-nav-link::after, 
         .mobile-menu-header::after, .mv-value h4::after {
             display: none;
-        }
+        } */
         
         /* Timeline card headings - white underline */
         .timeline-card h3::after {
@@ -217,7 +219,8 @@
             }
         }
         
-        .nav-link { color: #333; }
+        /* Remove header styling to rely on header-improvements.css */
+        /* .nav-link { color: #333; }
         
         .nav-link:hover, 
         .nav-link:focus, 
@@ -227,7 +230,7 @@
         
         .nav-link::after {
           background-color: var(--primary-color);
-        }
+        } */
     </style>
 </head>
 <body class="bg-background font-sans text-text-primary">
@@ -259,13 +262,45 @@
         </div>
     </header>
 
+    <!-- Remove hover effects from logo -->
+    <style>
+      /* Remove all hover effects from logo and company name */
+      .header .logo:hover img,
+      .header .logo img,
+      header .logo:hover img,
+      header .logo img {
+        transform: none !important;
+        transition: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        width: 80px !important;
+        height: auto !important;
+        max-height: 60px !important;
+        border-radius: 0 !important;
+      }
+      
+      .header .logo:hover .logo-text,
+      .header .logo .logo-text,
+      header .logo:hover .logo-text,
+      header .logo .logo-text {
+        color: #ffffff !important;
+        transform: none !important;
+        transition: none !important;
+        text-shadow: none !important;
+      }
+      
+      /* Ensure the same applies to mobile logo */
+      .mobile-logo:hover img,
+      .mobile-logo img {
+        transform: none !important;
+        transition: none !important;
+      }
+    </style>
+
     <!-- Mobile Side Menu -->
     <div class="mobile-menu">
         <div class="mobile-menu-header">
-            <a href="index.html" class="mobile-logo">
-                <img src="img3.jpg" alt="Supreme Thread Logo">
-                <span>Supreme Thread</span>
-            </a>
+           
             <button class="mobile-menu-close">
                 <span>&times;</span>
             </button>
@@ -1481,15 +1516,15 @@
                 </div>
                 <!-- Gallery Item 14 -->
                 <div class="about-gallery-item">
-                    <img src="https://images.unsplash.com/photo-1521336993297-5608be63b780?auto=format&fit=crop&w=600&q=80" alt="Bobbin Threads"/>
+                    <img src="https://images.unsplash.com/photo-1494696517868-22c04913f5bc?auto=format&fit=crop&w=600&q=80" alt="Bobbin Threads"/>
                 </div>
                 <!-- Gallery Item 15 -->
                 <div class="about-gallery-item">
-                    <img src="https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?auto=format&fit=crop&w=600&q=80" alt="Textile Machinery"/>
+                    <img src="https://images.unsplash.com/photo-1558958806-d5088c90f389?auto=format&fit=crop&w=600&q=80" alt="Textile Machinery"/>
                 </div>
                 <!-- Gallery Item 16 -->
                 <div class="about-gallery-item">
-                    <img src="https://images.unsplash.com/photo-1612292741055-e7fe9ad9b0c3?auto=format&fit=crop&w=600&q=80" alt="Thread Samples Display"/>
+                    <img src="https://images.unsplash.com/photo-1516962080544-eac695c93791?auto=format&fit=crop&w=600&q=80" alt="Thread Samples Display"/>
                 </div>
             </div>
             
@@ -1540,16 +1575,30 @@
             position: relative;
             z-index: 1;
             height: 0;
-          overflow: hidden;
+            overflow: hidden;
             opacity: 0;
+            visibility: hidden;
             transition: all 0.5s ease;
+            transform: translateY(-20px);
         }
         
         /* Expanded gallery when active */
         .expanded-gallery-grid.active {
             height: auto;
             opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
             margin-top: 20px;
+        }
+        
+        /* Ensure images in expanded gallery load properly */
+        .expanded-gallery-grid .about-gallery-item img {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .expanded-gallery-grid.active .about-gallery-item img {
+            opacity: 1;
         }
         
         .about-gallery-item {
@@ -1571,7 +1620,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+            background-color: rgba(164, 72, 113, 0.1); /* Light placeholder color */
+            opacity: 0;
+            animation: fadeInImage 0.5s forwards;
+        }
+        
+        @keyframes fadeInImage {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
         
         .about-gallery-item:hover img {
@@ -1659,11 +1716,58 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Handle image loading errors
+            const handleImageErrors = function() {
+                const allGalleryImages = document.querySelectorAll('.about-gallery-item img');
+                allGalleryImages.forEach(img => {
+                    // Set error handler for each image
+                    img.onerror = function() {
+                        console.log('Image failed to load: ' + this.src);
+                        // Replace with a backup image
+                        this.src = 'https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?auto=format&fit=crop&w=600&q=80';
+                        // Add a retry with the original if needed
+                        setTimeout(() => {
+                            const originalSrc = this.getAttribute('data-original-src');
+                            if (originalSrc) {
+                                this.src = originalSrc;
+                            }
+                        }, 3000);
+                    };
+                    // Store original source
+                    img.setAttribute('data-original-src', img.src);
+                });
+            };
+            
+            // Call the error handler
+            handleImageErrors();
+            
             // Gallery toggle functionality
             const galleryToggleBtn = document.getElementById('galleryToggleBtn');
             const expandedGallery = document.getElementById('expandedGallery');
             
             if (galleryToggleBtn && expandedGallery) {
+                // Make sure all images are preloaded
+                const preloadImages = function() {
+                    const images = expandedGallery.querySelectorAll('img');
+                    images.forEach(img => {
+                        const src = img.getAttribute('src');
+                        if (src) {
+                            const preloadImage = new Image();
+                            preloadImage.src = src;
+                        }
+                    });
+                    
+                    // Specifically preload the 3rd last image (item 14)
+                    const criticalImage = new Image();
+                    criticalImage.src = "https://images.unsplash.com/photo-1494696517868-22c04913f5bc?auto=format&fit=crop&w=600&q=80";
+                    criticalImage.onload = function() {
+                        console.log("Critical image preloaded successfully");
+                    };
+                };
+                
+                // Preload images immediately
+                preloadImages();
+                
                 galleryToggleBtn.addEventListener('click', function() {
                     // Toggle expanded gallery visibility
                     expandedGallery.classList.toggle('active');
@@ -1674,6 +1778,9 @@
                     // Change button text based on state
                     if (expandedGallery.classList.contains('active')) {
                         this.innerHTML = 'Show Less <i class="fas fa-arrow-up"></i>';
+                        
+                        // Force reflow to improve gallery display
+                        void expandedGallery.offsetWidth;
                         
                         // Smooth scroll to new images
                         setTimeout(() => {

@@ -89,10 +89,6 @@ body {
   transition: var(--transition);
 }
 
-.logo:hover img {
-  transform: scale(1.05);
-  border-color: var(--gold);
-}
 
 .logo:hover .logo-text {
   color: var(--mauve-dark);
@@ -507,11 +503,7 @@ body {
   transition: all 0.3s ease !important;
 }
 
-.logo:hover img {
-  transform: scale(1.05) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
-  border-color: #D4AF37 !important;
-}
+
 
 .nav-link {
   color: rgba(255, 255, 255, 0.85) !important;
