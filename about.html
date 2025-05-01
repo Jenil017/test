@@ -19,6 +19,48 @@
     <link rel="stylesheet" href="assets/css/common-improvements.css">
     <link rel="stylesheet" href="assets/css/header-improvements.css">
     <link rel="stylesheet" href="assets/css/footer-improvements.css">
+    <style>
+        /* Comprehensive fix for heading alignment and underline in about page */
+        h2, .section-title, h2[style], h2[data-aos], section h2, .container h2, div h2 {
+            text-align: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: 100% !important;
+            display: block !important;
+            position: relative !important;
+            float: none !important;
+            left: 0 !important;
+            right: 0 !important;
+            border-bottom: none !important;
+            border-top: none !important;
+            padding-bottom: 0 !important;
+        }
+        
+        /* Force the text-decoration underline style */
+        h2, .section-title, h2[style], h2[data-aos], h2:after, h2:before {
+            text-decoration: underline !important;
+            text-decoration-color: var(--primary) !important;
+            text-underline-offset: var(--underline-height) !important;
+            border-bottom: none !important;
+        }
+        
+        /* Remove any additional lines or borders */
+        h2:after, h2:before, h2 span, h2 span:after, h2 span:before,
+        .section-title:after, .section-title:before {
+            content: none !important;
+            display: none !important;
+            border: none !important;
+            background: none !important;
+            height: 0 !important;
+        }
+        
+        /* Override for any parent containers */
+        [style*="text-align: left"] h2,
+        [style*="text-align:left"] h2,
+        [align="left"] h2 {
+            text-align: center !important;
+        }
+    </style>
     <link rel="stylesheet" href="assets/css/fixed-width.css">
     <link rel="stylesheet" href="assets/css/fix-footer-dots.css">
     <link rel="stylesheet" href="assets/css/fix-footer-icons.css">
@@ -74,20 +116,9 @@
             border-radius: 1.5px;
         }
         
-        /* Center section headings */
-        .section-title, .text-center h2, .text-center h3 {
-            text-align: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        /* Removed section-title styles to prevent conflicts with inline styles */
         
-        .section-title::after, .text-center h2::after, .text-center h3::after {
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%; /* Make width slightly larger for section titles */
-            max-width: 200px; /* Limit maximum width */
-        }
+        /* Removed after pseudo-element styles to prevent double underlines */
         
         /* Special case for .mv-card-title */
         .mv-card-title {
@@ -816,11 +847,8 @@
     <!-- Mission & Vision Cards Section -->
     <section id="mission" class="mission-vision-section">
         <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title text-center" style="display: inline-block; position: relative; padding-bottom: 8px; margin-bottom: 20px;">
-                    Our Purpose
-                    <span style="position: absolute; bottom: 0; left: 30%; width: 40%; height: 3px; background-color: var(--primary);"></span>
-                </h2>
+            <div style="text-align: center; width: 100%;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; display: inline-block; color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: var(--underline-height); margin-bottom: 2rem; margin-top: 1em; border: none;">Our Purpose</h2>
             </div>
             <p class="section-subtitle text-center">Guiding our journey to deliver excellence and innovation</p>
             
@@ -1131,11 +1159,8 @@
     <!-- History Section -->
     <section class="history-section">
         <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title text-center" data-aos="fade-up" style="display: inline-block; position: relative; padding-bottom: 8px; margin-bottom: 20px;">
-                    Our Journey
-                    <span style="position: absolute; bottom: 0; left: 30%; width: 40%; height: 3px; background-color: var(--primary);"></span>
-                </h2>
+            <div style="text-align: center; width: 100%;">
+                <h2 data-aos="fade-up" style="font-size: 2.5rem; font-weight: 700; display: inline-block; color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: var(--underline-height); margin-bottom: 2rem; margin-top: 1em; border: none;">Our Journey</h2>
             </div>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
                 From humble beginnings to becoming a global leader in thread manufacturing
@@ -1447,11 +1472,8 @@
     <!-- Our Gallery Showcase Section (Added from gallery.html) -->
     <section class="about-gallery-section">
         <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title text-center" data-aos="fade-up" style="display: inline-block; position: relative; padding-bottom: 8px; margin-bottom: 20px;">
-                    Our Showcase Gallery
-                    <span style="position: absolute; bottom: 0; left: 30%; width: 40%; height: 3px; background-color: var(--primary);"></span>
-                </h2>
+            <div style="text-align: center; width: 100%;">
+                <h2 data-aos="fade-up" style="font-size: 2.5rem; font-weight: 700; display: inline-block; color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: var(--underline-height); margin-bottom: 2rem; margin-top: 1em; border: none;">Our Showcase Gallery</h2>
             </div>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
                 A visual journey through our premium thread collection, manufacturing process, and quality assurance
@@ -1803,11 +1825,8 @@
     <!-- Founders Section -->
     <section class="founders-section">
         <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title text-center" data-aos="fade-up" style="display: inline-block; position: relative; padding-bottom: 8px; margin-bottom: 20px;">
-                    Our Leadership
-                    <span style="position: absolute; bottom: 0; left: 30%; width: 40%; height: 3px; background-color: var(--primary);"></span>
-                </h2>
+            <div style="text-align: center; width: 100%;">
+                <h2 data-aos="fade-up" style="font-size: 2.5rem; font-weight: 700; display: inline-block; color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: var(--underline-height); margin-bottom: 2rem; margin-top: 1em; border: none;">Our Leadership</h2>
             </div>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
                 Meet the visionaries behind Supreme Thread's success story
@@ -1986,11 +2005,8 @@
     <!-- Certifications Section -->
     <section class="certifications-section">
         <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title text-center" data-aos="fade-up" style="display: inline-block; position: relative; padding-bottom: 8px; margin-bottom: 20px;">
-                    Our Certifications
-                    <span style="position: absolute; bottom: 0; left: 30%; width: 40%; height: 3px; background-color: var(--primary);"></span>
-                </h2>
+            <div style="text-align: center; width: 100%;">
+                <h2 data-aos="fade-up" style="font-size: 2.5rem; font-weight: 700; display: inline-block; color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: var(--underline-height); margin-bottom: 2rem; margin-top: 1em; border: none;">Our Certifications</h2>
             </div>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
                 Our commitment to quality is validated by industry-leading certifications
@@ -2784,32 +2800,7 @@
     </style>
 
     <style>
-        /* Direct approach for all h2 headings with important override */
-        h2 {
-            position: relative !important;
-            padding-bottom: 18px !important;
-            margin-bottom: 25px !important;
-        }
-        
-        h2:after {
-            content: '' !important;
-            position: absolute !important;
-            left: 50% !important;
-            bottom: 0 !important;
-            width: 80px !important;
-            height: 4px !important;
-            background-color: var(--primary) !important;
-            border-radius: 2px !important;
-            transform: translateX(-50%) !important;
-            display: block !important;
-        }
-        
-        /* For section titles that already have ::after content */
-        .section-title:after {
-            background-color: var(--primary) !important;
-            height: 4px !important;
-            width: 80px !important;
-        }
+        /* Removed double underline styles */
         
         /* For left-aligned headings */
         .mv-card-title:after,
