@@ -21,6 +21,7 @@
     0 -10px 30px rgba(0, 0, 0, 0.15),
     0 -2px 6px rgba(255, 255, 255, 0.1);
   padding-top: 80px; /* Space for the wave */
+  border-radius: 0; 
 }
 
 /* Luxury wave effect */

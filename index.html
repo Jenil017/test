@@ -326,9 +326,10 @@
         }
         
         .hero-btn.btn-outline:hover {
-            background: rgba(119, 119, 119, 0.25); /* Changed to grey accent with transparency */
-            color: #fff;
-            border-color: #777777; /* Changed to grey border */
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            border-color: var(--primary);
         }
     </style>
     
@@ -846,9 +847,11 @@
         }
         
         .hero-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            background: #8a3960; /* Restored to darker mauve tone */
+            background: var(--primary) !important;
+            color: #fff !important;
+            border-color: var(--primary) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+            transform: none !important;
             border-color: #8a3960; /* Restored to darker mauve tone */
             color: #bbbbbb; /* Changed text color to grey */
         }
@@ -2136,7 +2139,7 @@
    
 
      <!-- Footer -->
-     <footer class="footer" style="clear: both; display: block; position: relative; width: 100%; margin-top: 3rem;">
+     <footer class="footer" style="clear: both; display: block; position: relative; width: 100%; margin-top: 3rem;border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
         <div class="footer-container">
             <div class="footer-main">
                 <div class="footer-logo-section">
