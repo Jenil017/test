@@ -829,29 +829,33 @@
 }
 
 .contact-form-btn {
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--text-primary) 100%);
-    color: #fff;
-    border: none;
-    padding: 1rem 2rem;
+    display: inline-block;
     font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 0.8em 2em;
+    border-radius: var(--btn-radius);
+    background-color: #fff;
+    color: var(--primary);
+    text-decoration: none;
+    text-align: center;
     transition: all 0.3s ease;
+    border: 2px solid var(--primary);
     width: 100%;
     margin-top: 1rem;
-        max-width: 100%;
-        box-sizing: border-box;
+    cursor: pointer;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-form-btn:hover,
 .contact-form-btn:focus {
-    color: #fff !important;
-    background: linear-gradient(135deg,  var(--secondary) 100%) !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    background-color: #fff !important;
+    color: var(--primary) !important;
+    border: 2px solid var(--primary) !important;
     transform: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /* Responsive */
