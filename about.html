@@ -2205,14 +2205,7 @@
         }
         
         .modern-cta-card {
-          background: linear-gradient(135deg, 
-            #6e2a4a 0%, 
-            #833659 25%, 
-            #A44871 50%, 
-            #C67A9E 75%, 
-            #d995b7 100%);
-          background-size: 400% 400%;
-          animation: shimmerCta 15s infinite linear;
+          background: #A44871; /* Solid background color instead of gradient */
           border-radius: 20px;
           box-shadow: 0 15px 40px rgba(110, 42, 74, 0.25);
           overflow: hidden;
@@ -2220,11 +2213,6 @@
           width: 100%;
           position: relative;
           border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        @keyframes shimmerCta {
-          0% { background-position: -100% 0; }
-          100% { background-position: 200% 0; }
         }
         
         .modern-cta-card:hover {
